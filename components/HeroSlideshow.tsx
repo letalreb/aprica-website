@@ -10,22 +10,22 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: '/images/WhatsApp Image 2026-01-12 at 22.34.00 (10).jpeg',
+    image: '/images/IMG_20251220_163313.jpg',
     title: 'Benvenuti ad Aprica',
     subtitle: 'Case vacanze nel cuore delle Alpi',
   },
   {
-    image: '/images/WhatsApp Image 2026-01-12 at 22.33.59.jpeg',
+    image: '/images/IMG_20251220_144302.jpg',
     title: 'Appartamenti Moderni',
     subtitle: '20 posti letto in 4 appartamenti accoglienti',
   },
   {
-    image: '/images/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg',
+    image: '/images/IMG_20251220_163441.jpg',
     title: 'A 400m dagli Impianti',
     subtitle: 'Posizione ideale per sciatori e amanti della montagna',
   },
   {
-    image: '/images/WhatsApp Image 2026-01-12 at 22.33.58.jpeg',
+    image: '/images/IMG_20251220_163501.jpg',
     title: 'Comfort e Relax',
     subtitle: 'Box auto privato e ogni comfort per la vostra vacanza',
   },
