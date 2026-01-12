@@ -10,7 +10,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: '/images/WhatsApp Image 2026-01-12 at 22.34.00.jpeg',
+    image: '/images/WhatsApp Image 2026-01-12 at 22.34.00 (10).jpeg',
     title: 'Benvenuti ad Aprica',
     subtitle: 'Case vacanze nel cuore delle Alpi',
   },
