@@ -9,28 +9,23 @@ export const metadata: Metadata = {
   },
 };
 
-// Tutte le immagini disponibili
+// Tutte le immagini disponibili (senza duplicati)
 const allImages = [
-  '/images/WhatsApp Image 2026-01-12 at 22.34.00.jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.33.59.jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.33.58.jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.33.59 (1).jpeg',
+  '/images/WhatsApp Image 2026-01-12 at 22.33.58 (1).jpeg',
+  '/images/WhatsApp Image 2026-01-12 at 22.33.59.jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.33.59 (2).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.33.59 (3).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.33.59 (4).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.33.59 (5).jpeg',
+  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.00 (2).jpeg',
+  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (3).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.00 (4).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.00 (5).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.00 (6).jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (7).jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (8).jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.34.00 (9).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.00 (10).jpeg',
   '/images/WhatsApp Image 2026-01-12 at 22.34.01.jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.34.01 (1).jpeg',
-  '/images/WhatsApp Image 2026-01-12 at 22.33.58 (1).jpeg',
 ];
 
 export default function GalleriaPage() {
