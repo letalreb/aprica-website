@@ -36,13 +36,8 @@ export const metadata: Metadata = {
     address: true,
     telephone: true,
   },
-  metadataBase: new URL('https://apricamountainlodge.it'), // Sostituire con dominio reale
   alternates: {
     canonical: '/',
-    languages: {
-      'it-IT': '/it',
-      'en-US': '/en',
-    },
   },
   openGraph: {
     title: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto',
