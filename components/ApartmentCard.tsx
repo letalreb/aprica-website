@@ -24,7 +24,7 @@ export default function ApartmentCard({
             <img
               src={image}
               alt={nome}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-105 contrast-110 saturate-110"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-mountain-pine to-mountain-wood">

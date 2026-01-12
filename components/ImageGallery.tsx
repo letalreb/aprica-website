@@ -52,7 +52,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
               <img
                 src={image}
                 alt={`Immagine ${index + 1}`}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-105 contrast-110 saturate-110"
               />
             </div>
           ))}
@@ -96,7 +96,7 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
             <img
               src={images[selectedImage]}
               alt={`Immagine ${selectedImage + 1}`}
-              className="max-w-full max-h-[90vh] object-contain mx-auto"
+              className="max-w-full max-h-[90vh] object-contain mx-auto brightness-105 contrast-110 saturate-110"
             />
             {/* Counter */}
             <div className="text-white text-center mt-4 text-sm">

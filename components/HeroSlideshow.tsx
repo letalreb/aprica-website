@@ -73,7 +73,7 @@ export default function HeroSlideshow() {
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
           />
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
