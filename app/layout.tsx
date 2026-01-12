@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Logo from '@/components/Logo';
 import RichDataGenerator, {
   generateOrganizationSchema,
   generateLodgingBusinessSchema,
@@ -102,32 +103,26 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {/* Semantic HTML5 Structure */}
-        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-aprica-blue text-white px-4 py-2 z-50">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-mountain-pine text-white px-4 py-2 z-50">
           Vai al contenuto principale
         </a>
         
-        <header role="banner" className="bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <header role="banner" className="bg-white border-b border-mountain-fog sticky top-0 z-50">
           <nav
             role="navigation"
             aria-label="Navigazione principale"
-            className="container mx-auto px-4 py-5"
+            className="container mx-auto px-6 py-4"
           >
             <div className="flex justify-between items-center">
-              <div className="flex items-center gap-3">
-                <div className="text-3xl">🏔️</div>
-                <div>
-                  <a href="/" aria-label="Torna alla home" className="text-2xl font-bold text-aprica-blue hover:text-aprica-green transition-colors">
-                    Aprica Mountain Lodge
-                  </a>
-                  <p className="text-xs text-gray-600">Case Vacanze</p>
-                </div>
-              </div>
-              <ul className="hidden md:flex gap-8" role="menubar">
+              <a href="/" aria-label="Torna alla home" className="hover:opacity-80 transition-opacity">
+                <Logo className="h-12 w-auto" />
+              </a>
+              <ul className="hidden md:flex gap-6 items-center" role="menubar">
                 <li role="none">
                   <a
                     href="/"
                     role="menuitem"
-                    className="text-gray-700 hover:text-aprica-blue transition-colors font-medium"
+                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
                   >
                     Home
                   </a>
@@ -136,7 +131,7 @@ export default function RootLayout({
                   <a
                     href="/appartamenti"
                     role="menuitem"
-                    className="text-gray-700 hover:text-aprica-blue transition-colors font-medium"
+                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
                   >
                     Appartamenti
                   </a>
@@ -145,7 +140,7 @@ export default function RootLayout({
                   <a
                     href="/galleria"
                     role="menuitem"
-                    className="text-gray-700 hover:text-aprica-blue transition-colors font-medium"
+                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
                   >
                     Galleria
                   </a>
@@ -154,7 +149,7 @@ export default function RootLayout({
                   <a
                     href="/guida-valtellina"
                     role="menuitem"
-                    className="text-gray-700 hover:text-aprica-blue transition-colors font-medium"
+                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
                   >
                     Guida
                   </a>
@@ -163,7 +158,7 @@ export default function RootLayout({
                   <a
                     href="/faq"
                     role="menuitem"
-                    className="text-gray-700 hover:text-aprica-blue transition-colors font-medium"
+                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
                   >
                     FAQ
                   </a>
@@ -172,7 +167,7 @@ export default function RootLayout({
                   <a
                     href="mailto:info@apricamountainlodge.it"
                     role="menuitem"
-                    className="bg-aprica-blue text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all font-semibold"
+                    className="bg-mountain-pine text-white px-5 py-2.5 rounded-lg hover:bg-opacity-90 transition-all text-sm font-semibold shadow-sm"
                   >
                     Contatti
                   </a>
@@ -186,24 +181,24 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer role="contentinfo" className="bg-gradient-to-b from-gray-800 to-gray-900 text-white mt-20">
-          <div className="container mx-auto px-4 py-12">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <footer role="contentinfo" className="bg-mountain-pine text-white mt-20">
+          <div className="container mx-auto px-6 py-16">
+            <div className="grid md:grid-cols-4 gap-12 mb-12">
               <section aria-labelledby="footer-about">
-                <h3 id="footer-about" className="font-bold mb-4 text-xl flex items-center gap-2">
-                  <span className="text-2xl">🏔️</span>
-                  Aprica Mountain Lodge
-                </h3>
-                <p className="text-gray-300 text-sm leading-relaxed">
+                <div className="text-white mb-4">
+                  <div className="text-2xl font-bold mb-1">Aprica</div>
+                  <div className="text-sm text-mountain-fog">Mountain Lodge</div>
+                </div>
+                <p className="text-white/80 text-sm leading-relaxed">
                   Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 400m dagli impianti sciistici.
                 </p>
               </section>
 
               <section aria-labelledby="footer-address">
-                <h3 id="footer-address" className="font-bold mb-4 text-lg">
-                  📍 Indirizzo
+                <h3 id="footer-address" className="font-semibold mb-4 text-base text-white">
+                  Dove Siamo
                 </h3>
-                <address className="not-italic text-gray-300 text-sm leading-relaxed">
+                <address className="not-italic text-white/80 text-sm leading-relaxed">
                   Via Roma 123<br />
                   23031 Aprica (SO)<br />
                   Lombardia, Italia
@@ -211,61 +206,61 @@ export default function RootLayout({
               </section>
 
               <section aria-labelledby="footer-contacts">
-                <h3 id="footer-contacts" className="font-bold mb-4 text-lg">
-                  📞 Contatti
+                <h3 id="footer-contacts" className="font-semibold mb-4 text-base text-white">
+                  Contatti
                 </h3>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-3 text-sm">
                   <li>
                     <a
                       href="tel:+390342123456"
-                      className="text-gray-300 hover:text-white transition flex items-center gap-2"
+                      className="text-white/80 hover:text-white transition flex items-center gap-2"
                     >
-                      <span>☎️</span> +39 0342 123456
+                      +39 0342 123456
                     </a>
                   </li>
                   <li>
                     <a
                       href="mailto:info@apricamountainlodge.it"
-                      className="text-gray-300 hover:text-white transition flex items-center gap-2"
+                      className="text-white/80 hover:text-white transition flex items-center gap-2"
                     >
-                      <span>✉️</span> info@apricamountainlodge.it
+                      info@apricamountainlodge.it
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://wa.me/393331234567"
-                      className="text-gray-300 hover:text-white transition flex items-center gap-2"
+                      className="text-white/80 hover:text-white transition flex items-center gap-2"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span>💬</span> +39 333 1234567
+                      WhatsApp
                     </a>
                   </li>
                 </ul>
               </section>
 
               <section aria-labelledby="footer-links">
-                <h3 id="footer-links" className="font-bold mb-4 text-lg">
-                  🔗 Link Utili
+                <h3 id="footer-links" className="font-semibold mb-4 text-base text-white">
+                  Esplora
                 </h3>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-3 text-sm">
                   <li>
-                    <a href="/" className="text-gray-300 hover:text-white transition">
+                    <a href="/" className="text-white/80 hover:text-white transition">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/appartamenti" className="text-gray-300 hover:text-white transition">
+                    <a href="/appartamenti" className="text-white/80 hover:text-white transition">
                       Appartamenti
                     </a>
                   </li>
                   <li>
-                    <a href="/guida-valtellina" className="text-gray-300 hover:text-white transition">
+                    <a href="/guida-valtellina" className="text-white/80 hover:text-white transition">
                       Guida Valtellina
                     </a>
                   </li>
                   <li>
-                    <a href="/faq" className="text-gray-300 hover:text-white transition">
+                    <a href="/faq" className="text-white/80 hover:text-white transition">
                       FAQ
                     </a>
                   </li>
@@ -273,12 +268,9 @@ export default function RootLayout({
               </section>
             </div>
 
-            <div className="border-t border-gray-700 pt-8 text-center">
-              <p className="text-gray-400 text-sm">
+            <div className="border-t border-white/20 pt-8 text-center">
+              <p className="text-white/70 text-sm">
                 &copy; {new Date().getFullYear()} Aprica Mountain Lodge. Tutti i diritti riservati.
-              </p>
-              <p className="text-gray-500 text-xs mt-2">
-                Made with ❤️ for mountain lovers
               </p>
             </div>
           </div>

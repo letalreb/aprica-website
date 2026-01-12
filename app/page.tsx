@@ -26,7 +26,7 @@ export default function HomePage() {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6 text-aprica-green">
+            <h2 className="text-4xl font-bold mb-6 text-mountain-pine">
               {locales.home.welcome}
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
@@ -36,27 +36,27 @@ export default function HomePage() {
 
           {/* Modern Amenities Grid */}
           <div className="max-w-5xl mx-auto">
-            <h3 className="text-2xl font-bold text-center mb-8 text-aprica-blue">
+            <h3 className="text-2xl font-bold text-center mb-8 text-mountain-wood">
               {locales.home.amenitiesTitle}
             </h3>
             <div className="grid md:grid-cols-5 gap-6">
-              <div className="bg-aprica-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+              <div className="bg-mountain-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-3">🧺</div>
                 <p className="text-sm font-semibold text-gray-800">Lavatrice e<br />lavastoviglie</p>
               </div>
-              <div className="bg-aprica-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+              <div className="bg-mountain-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-3">📶</div>
                 <p className="text-sm font-semibold text-gray-800">Wi-Fi<br />veloce</p>
               </div>
-              <div className="bg-aprica-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+              <div className="bg-mountain-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-3">📺</div>
                 <p className="text-sm font-semibold text-gray-800">Netflix<br />e TV</p>
               </div>
-              <div className="bg-aprica-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+              <div className="bg-mountain-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-3">🚿</div>
                 <p className="text-sm font-semibold text-gray-800">Bagno elegante<br />con doccia</p>
               </div>
-              <div className="bg-aprica-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
+              <div className="bg-mountain-snow p-6 rounded-xl text-center hover:shadow-lg transition-shadow">
                 <div className="text-4xl mb-3">🚗</div>
                 <p className="text-sm font-semibold text-gray-800">Garage<br />privato</p>
               </div>
@@ -67,7 +67,7 @@ export default function HomePage() {
           <div className="max-w-4xl mx-auto mt-12 space-y-6 text-lg text-gray-700 leading-relaxed">
             <p className="text-center">{locales.home.description1}</p>
             <p className="text-center">{locales.home.description2}</p>
-            <p className="text-center font-semibold text-aprica-green text-xl">
+            <p className="text-center font-semibold text-mountain-pine text-xl">
               {locales.home.description3}
             </p>
           </div>
@@ -83,45 +83,45 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <h2
             id="quick-facts"
-            className="text-4xl font-bold mb-12 text-center text-aprica-green"
+            className="text-4xl font-bold mb-12 text-center text-mountain-pine"
           >
             📊 Dati in Sintesi
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {/* Card 1 */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-aprica-blue">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-mountain-sunset">
               <div className="text-4xl mb-4 text-center">🏠</div>
-              <dt className="font-bold text-xl text-aprica-blue mb-3 text-center">
+              <dt className="font-bold text-xl text-mountain-wood mb-3 text-center">
                 Posti Letto Totali
               </dt>
               <dd className="text-gray-700 text-center">
-                <div className="text-5xl font-bold text-aprica-green mb-2">{totalBeds}</div>
+                <div className="text-5xl font-bold text-mountain-pine mb-2">{totalBeds}</div>
                 <p className="text-sm">Suddivisi in {appartamenti.length} appartamenti</p>
                 <p className="text-xs text-gray-500 mt-1">(4+4+6+6)</p>
               </dd>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-aprica-green">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-mountain-wood">
               <div className="text-4xl mb-4 text-center">⛷️</div>
-              <dt className="font-bold text-xl text-aprica-blue mb-3 text-center">
+              <dt className="font-bold text-xl text-mountain-wood mb-3 text-center">
                 Distanza Impianti
               </dt>
               <dd className="text-gray-700 text-center">
-                <div className="text-5xl font-bold text-aprica-green mb-2">400m</div>
+                <div className="text-5xl font-bold text-mountain-pine mb-2">400m</div>
                 <p className="text-sm">5 minuti a piedi</p>
                 <p className="text-xs text-gray-500 mt-1">Funivia Aprica-Palabione</p>
               </dd>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-aprica-blue">
+            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow border-t-4 border-mountain-sunset">
               <div className="text-4xl mb-4 text-center">🅿️</div>
-              <dt className="font-bold text-xl text-aprica-blue mb-3 text-center">
+              <dt className="font-bold text-xl text-mountain-wood mb-3 text-center">
                 Parcheggio
               </dt>
               <dd className="text-gray-700 text-center">
-                <div className="text-2xl font-bold text-aprica-green mb-2">Box Privato</div>
+                <div className="text-2xl font-bold text-mountain-pine mb-2">Box Privato</div>
                 <p className="text-sm">Per ogni appartamento</p>
                 <p className="text-xs text-gray-500 mt-1">Coperto e riscaldato</p>
               </dd>
@@ -129,10 +129,10 @@ export default function HomePage() {
           </div>
 
           {/* Additional Info */}
-          <div className="mt-12 bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto border-l-4 border-aprica-blue">
+          <div className="mt-12 bg-white rounded-xl shadow-lg p-8 max-w-4xl mx-auto border-l-4 border-mountain-sunset">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <dt className="font-bold text-lg text-aprica-blue mb-2 flex items-center gap-2">
+                <dt className="font-bold text-lg text-mountain-wood mb-2 flex items-center gap-2">
                   <span>📍</span> Posizione
                 </dt>
                 <dd className="text-gray-700 text-sm">
@@ -140,7 +140,7 @@ export default function HomePage() {
                 </dd>
               </div>
               <div>
-                <dt className="font-bold text-lg text-aprica-blue mb-2 flex items-center gap-2">
+                <dt className="font-bold text-lg text-mountain-wood mb-2 flex items-center gap-2">
                   <span>✨</span> Dotazioni Standard
                 </dt>
                 <dd className="text-gray-700 text-sm">
@@ -158,7 +158,7 @@ export default function HomePage() {
         aria-labelledby="apartments-heading"
       >
         <div className="text-center mb-12">
-          <h2 id="apartments-heading" className="text-4xl font-bold mb-4 text-aprica-green">
+          <h2 id="apartments-heading" className="text-4xl font-bold mb-4 text-mountain-pine">
             I Nostri Appartamenti
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -182,7 +182,7 @@ export default function HomePage() {
 
       {/* Location Highlights - Modern Design with Icons */}
       <section
-        className="bg-gradient-to-br from-aprica-blue to-aprica-green text-white py-20"
+        className="bg-mountain-pine text-white py-20"
         aria-labelledby="location-heading"
       >
         <div className="container mx-auto px-4">
@@ -193,7 +193,7 @@ export default function HomePage() {
             Nel cuore di Aprica, con accesso immediato a tutte le attrazioni
           </p>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/20 transition-all transform hover:scale-105">
+            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/15 transition-all">
               <div className="text-6xl mb-4 text-center">⛷️</div>
               <h3 className="font-bold text-2xl mb-3 text-center">Impianti Sciistici</h3>
               <p className="text-white/90 text-center">
@@ -201,7 +201,7 @@ export default function HomePage() {
                 Comprensorio Aprica con Pista Baradello
               </p>
             </article>
-            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/20 transition-all transform hover:scale-105">
+            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/15 transition-all">
               <div className="text-6xl mb-4 text-center">🏪</div>
               <h3 className="font-bold text-2xl mb-3 text-center">Centro Paese</h3>
               <p className="text-white/90 text-center">
@@ -209,7 +209,7 @@ export default function HomePage() {
                 Negozi, ristoranti, servizi
               </p>
             </article>
-            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-xl hover:bg-white/20 transition-all transform hover:scale-105">
+            <article className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl hover:bg-white/15 transition-all">
               <div className="text-6xl mb-4 text-center">🚂</div>
               <h3 className="font-bold text-2xl mb-3 text-center">Trenino Bernina</h3>
               <p className="text-white/90 text-center">
@@ -223,7 +223,7 @@ export default function HomePage() {
 
       {/* CTA Section - Modern Gradient */}
       <section className="container mx-auto px-4 py-20">
-        <div className="max-w-4xl mx-auto bg-gradient-to-r from-aprica-blue to-aprica-green text-white rounded-3xl p-12 shadow-2xl text-center">
+        <div className="max-w-4xl mx-auto bg-gradient-to-r from-mountain-pine to-mountain-wood text-white rounded-3xl p-12 shadow-2xl text-center">
           <h2 className="text-4xl font-bold mb-4">Prenota la Tua Vacanza</h2>
           <p className="text-xl mb-10 text-white/90 max-w-2xl mx-auto">
             Contattaci per verificare la disponibilità e ricevere un preventivo personalizzato per
@@ -232,7 +232,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:info@apricamountainlodge.it"
-              className="inline-flex items-center justify-center gap-2 bg-white text-aprica-blue px-8 py-4 rounded-full font-bold hover:bg-aprica-snow transition-all transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center justify-center gap-2 bg-white text-mountain-wood px-8 py-4 rounded-full font-bold hover:bg-mountain-snow transition-all transform hover:scale-105 shadow-lg"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path

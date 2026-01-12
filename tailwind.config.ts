@@ -9,12 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        aprica: {
-          blue: '#0066CC',
-          green: '#2D5F3F',
-          snow: '#F8F9FA',
-          'blue-light': '#4A9EFF',
-          'green-light': '#3D7A52',
+        mountain: {
+          pine: '#1A3A2E',
+          wood: '#8B5A3C',
+          stone: '#6B7280',
+          sunset: '#E67E50',
+          snow: '#FAFAFA',
+          fog: '#E5E7EB',
         },
       },
       animation: {
