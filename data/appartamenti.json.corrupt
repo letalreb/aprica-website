@@ -1,0 +1,119 @@
+{
+  "appartamenti": [
+    {
+      "slug": "appartamento-baradello-4-posti",
+      "nome": "Appartamento Baradello",
+      "postiLetto": 4,
+      "descrizione": "Appartamento accogliente con 2 camere da letto, cucina con piano cottura a induzione e soggiorno panoramico.",
+      "caratteristiche": [
+        "Lavatrice e lavastoviglie",
+        "Wi-Fi veloce gratuito",
+        "Netflix e TV",
+        "Bagno elegante con doccia",
+        "Garage privato coperto",
+        "Piano cottura a induzione",
+        "Riscaldamento autonomo",
+        "Balcone panoramico"
+      ],
+      "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
+      "superficieMq": 65,
+      "piano": 1,
+      "image": "/images/baradello.jpg"
+    },
+    {
+      "slug": "appartamento-mortirolo-4-posti",
+      "nome": "Appartamento Mortirolo",
+      "postiLetto": 4,
+      "deLavatrice e lavastoviglie",
+        "Wi-Fi veloce gratuito",
+        "Netflix e TV",
+        "Bagno elegante con doccia",
+        "Garage privato coperto",
+        "Piano cottura a induzione,
+        "Lavatrice",
+        "Wi-Fi gratuito",
+        "Riscaldamento autonomo",
+        "Terrazzo"
+      ],
+      "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
+      "superficieMq": 70,
+      "piano": 2,
+      "image": "/images/mortirolo.jpg"
+    },
+    {
+      "slug": "appartamento-magnolta-6-posti",
+      "nome": "Appartamento Magnolta",
+      "postiLetto": 6,
+      "deLavatrice e lavastoviglie",
+        "Wi-Fi veloce gratuito",
+        "Netflix e TV",
+        "Bagno elegante con doccia",
+        "Due bagni moderni",
+        "Garage privato coperto",
+        "Piano cottura a induzione",
+        "Riscaldamento autonomotuito",
+        "Riscaldamento autonomo",
+        "Due bagni",
+        "Balcone"
+      ],
+      "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
+      "superficieMq": 90,
+      "piano": 1,
+      "image": "/images/magnolta.jpg"
+    },
+    {
+      "slug": "appartamento-palabione-6-posti",
+      "noLavatrice e lavastoviglie",
+        "Wi-Fi veloce gratuito",
+        "Netflix e TV",
+        "Bagno elegante con doccia",
+        "Due bagni moderni",
+        "Garage privato coperto",
+        "Piano cottura a induzione",
+        "Riscaldamento autonomoglie",
+        "Lavatrice",
+        "Wi-Fi gratuito",
+        "Riscaldamento autonomo",
+        "Due bagni",
+        "Terrazzo panoramico"
+      ],
+      "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
+      "superficieMq": 95,
+      "piano": 3,
+      "image": "/images/palabione.jpg"
+    }
+  ],
+  "struttura": {
+    "nome": "Case Vacanze Aprica Mountain Lodge",
+    "indirizzo": {
+      "via": "Via Roma 123",
+      "citta": "Aprica",
+      "cap": "23031",
+      "provincia": "SO",
+      "regione": "Lombardia",
+      "paese": "Italia"
+    },
+    "coordinate": {
+      "latitudine": 46.1519,
+      "longitudine": 10.1528
+    },
+    "contatti": {
+      "telefono": "+39 0342 123456",
+      "email": "info@apricamountainlodge.it",
+      "whatsapp": "+39 333 1234567"
+    },
+    "servizi": [
+      "Box auto privato",
+      "Ski room",
+      "Wi-Fi in tutta la struttura",
+      "Check-in self-service",
+      "Accoglienza personalizzata"
+    ],
+    "distanze": {
+      "impianti": "400 metri",
+      "centro": "200 metri",
+      "supermercato": "150 metri",
+      "stazione_bernina": "35 km"
+    }
+  }
+}

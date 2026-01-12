@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "appartamenti": "Appartamenti",
+    "guida": "Guida Locale",
+    "contatti": "Contatti"
+  },
+  "home": {
+    "title": "Case Vacanze Aprica Mountain Lodge",
+    "subtitle": "4 appartamenti accoglienti nel cuore di Aprica",
+    "hero": "La tua vacanza perfetta sulle Alpi Retiche",
+    "cta": "Scopri gli appartamenti",
+    "welcome": "Benvenuti nelle vostre nuove case vacanza in montagna",
+    "intro": "Scoprite il piacere di una vacanza in montagna senza rinunciare a nessun comfort. I nostri splendidi appartamenti di nuova costruzione, appena ultimati, sono pensati per offrirvi relax, praticità e un'atmosfera accogliente in ogni stagione.",
+    "amenitiesTitle": "Ogni appartamento è completamente arredato e dotato di tutti i comfort moderni",
+    "description1": "Gli ambienti sono nuovi, curati nei dettagli e progettati per farvi sentire subito a casa, che siate in vacanza per un weekend o per un soggiorno più lungo.",
+    "description2": "La posizione è ideale: comoda alle piste da sci, perfetta per gli amanti degli sport invernali, e allo stesso tempo vicina a tutti i principali servizi come negozi, ristoranti e trasporti. In estate, la montagna offre natura, relax e infinite possibilità per escursioni e attività all'aria aperta.",
+    "description3": "Qui troverete il perfetto equilibrio tra comfort moderno e fascino alpino. La vostra vacanza inizia da qui."
+  },
+  "appartamenti": {
+    "title": "I nostri appartamenti",
+    "totale": "20 posti letto in 4 appartamenti",
+    "from": "Da",
+    "beds": "posti letto",
+    "features": "Caratteristiche",
+    "composition": "Composizione",
+    "floor": "Piano",
+    "area": "Superficie",
+    "book": "Richiedi disponibilità",
+    "amenities": {
+      "washer": "Lavatrice e lavastoviglie",
+      "wifi": "Connessione Wi-Fi veloce",
+      "netflix": "Netflix e TV",
+      "bathroom": "Bagno elegante con doccia",
+      "garage": "Garage privato"
+    }
+  },
+  "dataSummary": {
+    "title": "Dati in Sintesi",
+    "location": "Posizione",
+    "totalBeds": "Posti letto totali",
+    "apartments": "Appartamenti",
+    "parking": "Parcheggio",
+    "distances": "Distanze",
+    "skiLifts": "Impianti sciistici",
+    "center": "Centro paese",
+    "features": "Dotazioni comuni"
+  },
+  "faq": {
+    "title": "Domande Frequenti",
+    "q1": "A che distanza sono gli impianti di risalita?",
+    "a1": "Gli impianti sciistici sono raggiungibili a piedi in soli 5 minuti (400 metri). La funivia Aprica-Palabione è la più vicina.",
+    "q2": "È incluso il parcheggio?",
+    "a2": "Sì, ogni appartamento ha a disposizione un box auto privato coperto e riscaldato.",
+    "q3": "Come funziona il check-in?",
+    "a3": "Offriamo check-in flessibile tramite keybox. Vi invieremo le istruzioni dettagliate prima dell'arrivo. Check-in dalle 15:00, check-out entro le 10:00.",
+    "q4": "Gli appartamenti sono dotati di cucina?",
+    "a4": "Sì, tutti gli appartamenti dispongono di cucina completa con piano cottura a induzione, lavastoviglie, frigorifero e tutti gli utensili necessari.",
+    "q5": "C'è la connessione Wi-Fi?",
+    "a5": "Sì, Wi-Fi gratuito ad alta velocità in tutti gli appartamenti.",
+    "q6": "Posso portare animali domestici?",
+    "a6": "Gli animali domestici sono ammessi previo accordo. Contattaci per maggiori informazioni."
+  },
+  "guide": {
+    "title": "Guida alla Valtellina",
+    "subtitle": "Scopri i tesori della zona",
+    "bernina": {
+      "title": "Trenino del Bernina",
+      "description": "Il famoso Trenino Rosso del Bernina (Patrimonio UNESCO) parte da Tirano, a soli 35 km da Aprica. Un'esperienza indimenticabile attraverso paesaggi alpini mozzafiato."
+    },
+    "mortirolo": {
+      "title": "Passo del Mortirolo",
+      "description": "Una delle salite più iconiche del ciclismo mondiale. D'estate ideale per gli appassionati di bici, d'inverno per passeggiate panoramiche."
+    },
+    "piste": {
+      "title": "Comprensorio Aprica",
+      "description": "50 km di piste perfettamente innevate, con la famosa Pista Baradello e collegamento con Corteno Golgi. Impianti moderni e scuola sci."
+    }
+  },
+  "footer": {
+    "address": "Indirizzo",
+    "contacts": "Contatti",
+    "rights": "Tutti i diritti riservati"
+  }
+}

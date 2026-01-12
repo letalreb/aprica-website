@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "appartamenti": "Apartments",
+    "guida": "Local Guide",
+    "contatti": "Contacts"
+  },
+  "home": {
+    "title": "Aprica Mountain Lodge Holiday Homes",
+    "subtitle": "4 cozy apartments in the heart of Aprica",
+    "hero": "Your perfect alpine holiday",
+    "cta": "Discover apartments",
+    "welcome": "Welcome to your new mountain holiday homes",
+    "intro": "Experience the true charm of the mountains without giving up comfort. Our brand-new holiday apartments, recently completed, are designed to offer relaxation, convenience and a warm, welcoming atmosphere all year round.",
+    "amenitiesTitle": "Each apartment is fully equipped with modern amenities",
+    "description1": "All spaces are new, stylish and carefully designed to make you feel at home, whether you're staying for a short break or a longer holiday.",
+    "description2": "The location is perfect: close to the ski slopes, ideal for winter sports lovers, and within easy reach of all essential services such as shops, restaurants and public transport. In summer, enjoy nature, peace and a wide range of outdoor activities.",
+    "description3": "A perfect blend of modern comfort and alpine charm awaits you. Your mountain getaway starts here."
+  },
+  "appartamenti": {
+    "title": "Our apartments",
+    "totale": "20 beds across 4 apartments",
+    "from": "From",
+    "beds": "beds",
+    "features": "Features",
+    "composition": "Composition",
+    "floor": "Floor",
+    "area": "Area",
+    "book": "Request availability",
+    "amenities": {
+      "washer": "Washing machine and dishwasher",
+      "wifi": "High-speed Wi-Fi",
+      "netflix": "Netflix and TV",
+      "bathroom": "Modern bathroom with shower",
+      "garage": "Private garage"
+    }
+  },
+  "dataSummary": {
+    "title": "Quick Facts",
+    "location": "Location",
+    "totalBeds": "Total beds",
+    "apartments": "Apartments",
+    "parking": "Parking",
+    "distances": "Distances",
+    "skiLifts": "Ski lifts",
+    "center": "Town center",
+    "features": "Common amenities"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How far are the ski lifts?",
+    "a1": "The ski lifts are just a 5-minute walk away (400 meters). The Aprica-Palabione cable car is the closest one.",
+    "q2": "Is parking included?",
+    "a2": "Yes, each apartment has a private covered and heated garage box.",
+    "q3": "How does check-in work?",
+    "a3": "We offer flexible check-in via keybox. We'll send you detailed instructions before arrival. Check-in from 3:00 PM, check-out by 10:00 AM.",
+    "q4": "Do apartments have a kitchen?",
+    "a4": "Yes, all apartments feature a full kitchen with induction cooktop, dishwasher, refrigerator, and all necessary utensils.",
+    "q5": "Is Wi-Fi available?",
+    "a5": "Yes, free high-speed Wi-Fi in all apartments.",
+    "q6": "Can I bring pets?",
+    "a6": "Pets are allowed by prior arrangement. Contact us for more information."
+  },
+  "guide": {
+    "title": "Valtellina Guide",
+    "subtitle": "Discover local treasures",
+    "bernina": {
+      "title": "Bernina Express",
+      "description": "The famous Bernina Red Train (UNESCO World Heritage) departs from Tirano, just 35 km from Aprica. An unforgettable experience through breathtaking alpine landscapes."
+    },
+    "mortirolo": {
+      "title": "Mortirolo Pass",
+      "description": "One of the most iconic climbs in world cycling. Perfect for bike enthusiasts in summer, and for scenic walks in winter."
+    },
+    "piste": {
+      "title": "Aprica Ski Resort",
+      "description": "50 km of perfectly groomed slopes, featuring the famous Baradello run and connection to Corteno Golgi. Modern lifts and ski school."
+    }
+  },
+  "footer": {
+    "address": "Address",
+    "contacts": "Contacts",
+    "rights": "All rights reserved"
+  }
+}
