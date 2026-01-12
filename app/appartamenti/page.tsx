@@ -26,6 +26,9 @@ export default function AppartamentiPage() {
           <p className="text-xl text-white/90">
             {totalBeds} posti letto totali • Tutti con box auto privato
           </p>
+          <p className="text-2xl font-bold mt-4">
+            A partire da €200/notte
+          </p>
         </div>
       </section>
 

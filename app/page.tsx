@@ -70,6 +70,10 @@ export default function HomePage() {
             <p className="text-center font-semibold text-mountain-pine text-xl">
               {locales.home.description3}
             </p>
+            <div className="text-center pt-4">
+              <p className="text-3xl font-bold text-mountain-wood">A partire da €200/notte</p>
+              <p className="text-sm text-mountain-stone mt-2">Prezzi variabili in base al periodo e alla durata del soggiorno</p>
+            </div>
           </div>
         </div>
       </section>

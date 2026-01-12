@@ -47,8 +47,9 @@ export default function ApartmentCard({
           
           <p className="text-sm text-mountain-stone line-clamp-2">{descrizione}</p>
           
-          <div className="pt-1">
-            <span className="text-mountain-pine font-medium text-sm">Scopri disponibilità →</span>
+          <div className="pt-1 flex items-center justify-between">
+            <span className="text-mountain-pine font-semibold">Da €200<span className="text-sm font-normal text-mountain-stone">/notte</span></span>
+            <span className="text-mountain-pine font-medium text-sm">Scopri →</span>
           </div>
         </div>
       </a>
