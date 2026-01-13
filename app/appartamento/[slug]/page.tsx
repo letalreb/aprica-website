@@ -5,6 +5,7 @@ import RichDataGenerator, {
   generateBreadcrumbSchema,
 } from '@/components/RichDataGenerator';
 import appartamentiData from '@/data/appartamenti.json';
+import { IconGarage, IconSki, IconWifi, IconKey, IconCheck } from '@/components/Icons';
 
 // Generate static paths for all apartments
 export async function generateStaticParams() {
@@ -31,7 +32,7 @@ export async function generateMetadata({
 
   return {
     title: `${apartment.nome} - ${apartment.postiLetto} Posti Letto`,
-    description: `${apartment.descrizione} ${apartment.composizione}. Dotato di ${apartment.caratteristiche.join(', ')}. Superficie ${apartment.superficieMq}mq.`,
+    description: `${apartment.descrizione} ${apartment.composizione}. Dotato di ${apartment.caratteristiche.join(', ')}.`,
     keywords: [
       apartment.nome,
       `appartamento ${apartment.postiLetto} posti`,
@@ -126,8 +127,6 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
               <strong>{apartment.postiLetto}</strong> posti letto
             </span>
             <span>•</span>
-            <span>{apartment.superficieMq}m²</span>
-            <span>•</span>
             <span>Piano {apartment.piano}</span>
           </div>
         </header>
@@ -164,12 +163,6 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
               <dd itemProp="numberOfBathroomsTotal">{numBathrooms}</dd>
             </div>
             <div>
-              <dt className="font-semibold">Superficie:</dt>
-              <dd>
-                <span itemProp="floorSize">{apartment.superficieMq}m²</span>
-              </dd>
-            </div>
-            <div>
               <dt className="font-semibold">Piano:</dt>
               <dd>{apartment.piano}</dd>
             </div>
@@ -185,7 +178,7 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
             </div>
             <div className="md:col-span-2">
               <dt className="font-semibold">Distanza impianti sciistici:</dt>
-              <dd>400 metri (5 minuti a piedi)</dd>
+              <dd>800 metri (10 minuti a piedi)</dd>
             </div>
           </dl>
         </section>
@@ -219,7 +212,7 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
                 itemScope
                 itemType="https://schema.org/LocationFeatureSpecification"
               >
-                <span className="text-aprica-blue text-xl">✓</span>
+                <IconCheck className="w-5 h-5 text-aprica-blue" size={20} />
                 <span itemProp="name">{feature}</span>
               </li>
             ))}
@@ -233,19 +226,19 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
           </h3>
           <ul className="space-y-2" role="list">
             <li className="flex items-center gap-2">
-              <span className="text-aprica-blue">🅿️</span>
+              <IconGarage className="w-5 h-5 text-aprica-blue" size={20} />
               <strong>Box auto privato</strong> (coperto e riscaldato)
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-aprica-blue">🎿</span>
+              <IconSki className="w-5 h-5 text-aprica-blue" size={20} />
               Ski room con deposito sci
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-aprica-blue">📶</span>
+              <IconWifi className="w-5 h-5 text-aprica-blue" size={20} />
               Wi-Fi gratuito ad alta velocità
             </li>
             <li className="flex items-center gap-2">
-              <span className="text-aprica-blue">🔑</span>
+              <IconKey className="w-5 h-5 text-aprica-blue" size={20} />
               Check-in autonomo tramite keybox
             </li>
           </ul>

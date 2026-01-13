@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Aprica Mountain Lodge',
   },
   description:
-    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 400m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
+    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 800m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
   keywords: [
     'case vacanze Aprica',
     'appartamenti Aprica',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto',
     description:
-      '4 appartamenti accoglienti ad Aprica a 400m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
+      '4 appartamenti accoglienti ad Aprica a 800m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
     url: 'https://apricamountainlodge.it',
     siteName: 'Aprica Mountain Lodge',
     locale: 'it_IT',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Case Vacanze Aprica Mountain Lodge',
-    description: '4 appartamenti per 20 posti ad Aprica. A 400m dagli impianti sciistici.',
+    description: '4 appartamenti per 20 posti ad Aprica. A 800m dagli impianti sciistici.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -188,8 +188,8 @@ export default function RootLayout({
                   <div className="text-2xl font-bold mb-1">Aprica</div>
                   <div className="text-sm text-mountain-fog">Mountain Lodge</div>
                 </div>
-                <p className="text-white/80 text-sm leading-relaxed">
-                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 400m dagli impianti sciistici.
+                <p className="text-gray-200 text-sm leading-relaxed">
+                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 800m dagli impianti sciistici.
                 </p>
               </section>
 
@@ -197,7 +197,7 @@ export default function RootLayout({
                 <h3 id="footer-address" className="font-semibold mb-4 text-base text-white">
                   Dove Siamo
                 </h3>
-                <address className="not-italic text-white/80 text-sm leading-relaxed">
+                <address className="not-italic text-gray-200 text-sm leading-relaxed">
                   Via Roma 123<br />
                   23031 Aprica (SO)<br />
                   Lombardia, Italia
@@ -212,7 +212,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="tel:+390342123456"
-                      className="text-white/80 hover:text-white transition flex items-center gap-2"
+                      className="text-gray-200 hover:text-white transition flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1"
                     >
                       +39 0342 123456
                     </a>
@@ -220,7 +220,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="mailto:info@apricamountainlodge.it"
-                      className="text-white/80 hover:text-white transition flex items-center gap-2"
+                      className="text-gray-200 hover:text-white transition flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1"
                     >
                       info@apricamountainlodge.it
                     </a>
@@ -228,7 +228,7 @@ export default function RootLayout({
                   <li>
                     <a
                       href="https://wa.me/393331234567"
-                      className="text-white/80 hover:text-white transition flex items-center gap-2"
+                      className="text-gray-200 hover:text-white transition flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -244,22 +244,22 @@ export default function RootLayout({
                 </h3>
                 <ul className="space-y-3 text-sm">
                   <li>
-                    <a href="/" className="text-white/80 hover:text-white transition">
+                    <a href="/" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="/appartamenti" className="text-white/80 hover:text-white transition">
+                    <a href="/appartamenti" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
                       Appartamenti
                     </a>
                   </li>
                   <li>
-                    <a href="/guida-valtellina" className="text-white/80 hover:text-white transition">
+                    <a href="/guida-valtellina" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
                       Guida Valtellina
                     </a>
                   </li>
                   <li>
-                    <a href="/faq" className="text-white/80 hover:text-white transition">
+                    <a href="/faq" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
                       FAQ
                     </a>
                   </li>
@@ -268,7 +268,7 @@ export default function RootLayout({
             </div>
 
             <div className="border-t border-white/20 pt-8 text-center">
-              <p className="text-white/70 text-sm">
+              <p className="text-gray-300 text-sm">
                 &copy; {new Date().getFullYear()} Aprica Mountain Lodge. Tutti i diritti riservati.
               </p>
             </div>

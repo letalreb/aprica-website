@@ -233,7 +233,7 @@ export default function GuidaValtellinaPage() {
               <dl className="space-y-2 text-sm">
                 <div>
                   <dt className="font-semibold inline">Distanza dalle case:</dt>
-                  <dd className="inline ml-2">400 metri (5 min a piedi)</dd>
+                  <dd className="inline ml-2">800 metri (10 min a piedi)</dd>
                 </div>
                 <div>
                   <dt className="font-semibold inline">Piste totali:</dt>

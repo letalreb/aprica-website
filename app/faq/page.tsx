@@ -59,30 +59,40 @@ export default function FAQPage() {
       <FAQSection faqs={faqs} lang="it" />
 
       {/* Additional CTA */}
-      <section className="mt-12 bg-aprica-blue text-white p-8 rounded-lg text-center">
-        <h2 className="text-2xl font-bold mb-4">Altre Domande?</h2>
-        <p className="mb-6">Non esitare a contattarci per qualsiasi informazione.</p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="mailto:info@apricamountainlodge.it"
-            className="bg-white text-aprica-blue px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-          >
-            📧 Email
-          </a>
-          <a
-            href="https://wa.me/393331234567"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition"
-          >
-            💬 WhatsApp
-          </a>
-          <a
-            href="tel:+390342123456"
-            className="bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-700 transition"
-          >
-            📞 Telefono
-          </a>
+      <section className="mt-16 max-w-4xl mx-auto">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-mountain-pine via-mountain-wood to-mountain-pine opacity-10 blur-3xl rounded-3xl"></div>
+          <div className="relative glass border-2 border-white/20 rounded-3xl p-10 shadow-2xl text-center">
+            <div className="inline-block mb-4">
+              <span className="inline-flex items-center px-4 py-2 rounded-full bg-mountain-sunset/20 text-mountain-sunset text-sm font-bold backdrop-blur-sm">
+                💬 Assistenza
+              </span>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-mountain-pine to-mountain-wood bg-clip-text text-transparent">Altre Domande?</h2>
+            <p className="mb-8 text-gray-700">Non esitare a contattarci per qualsiasi informazione.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="mailto:info@apricamountainlodge.it"
+                className="bg-gradient-to-r from-mountain-pine to-mountain-wood text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+              >
+                📧 Email
+              </a>
+              <a
+                href="https://wa.me/393331234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-green-500 to-green-600 text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+              >
+                💬 WhatsApp
+              </a>
+              <a
+                href="tel:+390342123456"
+                className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+              >
+                📞 Chiama Ora
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </div>

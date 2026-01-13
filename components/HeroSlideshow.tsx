@@ -12,6 +12,12 @@ interface Slide {
 const slides: Slide[] = [
   {
     type: 'video',
+    src: '/videos/grok-video-592c1733-f3b4-4e00-8afd-92be57548665.mp4',
+    title: 'Scopri Aprica',
+    subtitle: 'Paesaggi mozzafiato e natura incontaminata',
+  },
+  {
+    type: 'video',
     src: '/videos/grok-video-8cc55b70-1e20-40bd-95b6-c4b391673a37.mp4',
     title: 'Benvenuti ad Aprica',
     subtitle: 'Case vacanze nel cuore delle Alpi',
@@ -24,13 +30,13 @@ const slides: Slide[] = [
   },
   {
     type: 'image',
-    src: '/images/IMG_20251220_163441.jpg',
-    title: 'A 400m dagli Impianti',
+    src: '/images/IMG_20251220_163427.jpg',
+    title: 'A 800m dagli Impianti',
     subtitle: 'Posizione ideale per sciatori e amanti della montagna',
   },
   {
     type: 'image',
-    src: '/images/IMG_20251220_163501.jpg',
+    src: '/images/IMG_20251220_152054.jpg',
     title: 'Comfort e Relax',
     subtitle: 'Box auto privato e ogni comfort per la vostra vacanza',
   },
@@ -66,7 +72,7 @@ export default function HeroSlideshow() {
   };
 
   return (
-    <div className="relative h-[70vh] min-h-[500px] overflow-hidden bg-gray-900">
+    <div className="relative h-[70vh] min-h-[500px] overflow-hidden bg-gray-900" role="region" aria-label="Slideshow delle immagini della struttura">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -74,6 +80,7 @@ export default function HeroSlideshow() {
           className={`absolute inset-0 transition-opacity duration-1000 ${
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
+          aria-hidden={index !== currentSlide}
         >
           {slide.type === 'video' ? (
             <video
@@ -152,8 +159,9 @@ export default function HeroSlideshow() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all hover:scale-110"
-        aria-label="Slide successiva"
+        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/40 backdrop-blur-sm text-white p-4 rounded-full transition-all hover:scale-110 focus:ring-4 focus:ring-white/50 focus:outline-none touch-target"
+        aria-label="Vai alla slide successiva"
+        type="button"
       >
         <svg
           className="w-6 h-6"

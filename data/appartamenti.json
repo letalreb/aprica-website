@@ -4,7 +4,7 @@
       "slug": "appartamento-baradello-4-posti",
       "nome": "Appartamento Baradello",
       "postiLetto": 4,
-      "descrizione": "Appartamento accogliente con 2 camere da letto, cucina con piano cottura a induzione e soggiorno panoramico.",
+      "descrizione": "Bilocale accogliente con cucina con piano cottura a induzione e soggiorno panoramico.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -24,7 +24,7 @@
       "slug": "appartamento-mortirolo-4-posti",
       "nome": "Appartamento Mortirolo",
       "postiLetto": 4,
-      "descrizione": "Appartamento moderno con 2 camere da letto, cucina con piano cottura a induzione e terrazzo con vista montagna.",
+      "descrizione": "Bilocale moderno con cucina con piano cottura a induzione e terrazzo con vista montagna.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -38,13 +38,13 @@
       "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
       "superficieMq": 70,
       "piano": 2,
-      "image": "/images/IMG_20251220_163447.jpg"
+      "image": "/images/IMG_20251220_144302.jpg"
     },
     {
       "slug": "appartamento-magnolta-6-posti",
       "nome": "Appartamento Magnolta",
       "postiLetto": 6,
-      "descrizione": "Appartamento spazioso con 3 camere da letto, 2 bagni, cucina con piano cottura a induzione e ampio soggiorno.",
+      "descrizione": "Trilocale spazioso su due livelli con 2 bagni, cucina con piano cottura a induzione e ampio soggiorno.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -59,13 +59,13 @@
       "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
       "superficieMq": 90,
       "piano": 1,
-      "image": "/images/IMG_20251220_163513.jpg"
+      "image": "/images/IMG_20251220_163424.jpg"
     },
     {
       "slug": "appartamento-palabione-6-posti",
       "nome": "Appartamento Palabione",
       "postiLetto": 6,
-      "descrizione": "Appartamento panoramico con 3 camere da letto, 2 bagni, cucina con piano cottura a induzione e terrazzo vista piste.",
+      "descrizione": "Trilocale panoramico su due livelli con 2 bagni, cucina con piano cottura a induzione e terrazzo vista piste.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -80,7 +80,7 @@
       "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
       "superficieMq": 95,
       "piano": 3,
-      "image": "/images/IMG_20251220_163606.jpg"
+      "image": "/images/IMG_20251220_163607.jpg"
     }
   ],
   "struttura": {
@@ -110,7 +110,7 @@
       "Accoglienza personalizzata"
     ],
     "distanze": {
-      "impianti": "400 metri",
+      "impianti": "800 metri",
       "centro": "200 metri",
       "supermercato": "150 metri",
       "stazione_bernina": "35 km"
