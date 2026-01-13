@@ -3,29 +3,34 @@
 import { useState, useEffect } from 'react';
 
 interface Slide {
-  image: string;
+  type: 'image' | 'video';
+  src: string;
   title: string;
   subtitle: string;
 }
 
 const slides: Slide[] = [
   {
-    image: '/images/IMG_20251220_163313.jpg',
+    type: 'video',
+    src: '/videos/grok-video-8cc55b70-1e20-40bd-95b6-c4b391673a37.mp4',
     title: 'Benvenuti ad Aprica',
     subtitle: 'Case vacanze nel cuore delle Alpi',
   },
   {
-    image: '/images/IMG_20251220_144302.jpg',
+    type: 'image',
+    src: '/images/IMG_20251220_144302.jpg',
     title: 'Appartamenti Moderni',
     subtitle: '20 posti letto in 4 appartamenti accoglienti',
   },
   {
-    image: '/images/IMG_20251220_163441.jpg',
+    type: 'image',
+    src: '/images/IMG_20251220_163441.jpg',
     title: 'A 400m dagli Impianti',
     subtitle: 'Posizione ideale per sciatori e amanti della montagna',
   },
   {
-    image: '/images/IMG_20251220_163501.jpg',
+    type: 'image',
+    src: '/images/IMG_20251220_163501.jpg',
     title: 'Comfort e Relax',
     subtitle: 'Box auto privato e ogni comfort per la vostra vacanza',
   },
@@ -70,11 +75,22 @@ export default function HeroSlideshow() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          <img
-            src={slide.image}
-            alt={slide.title}
-            className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
-          />
+          {slide.type === 'video' ? (
+            <video
+              src={slide.src}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
+            />
+          ) : (
+            <img
+              src={slide.src}
+              alt={slide.title}
+              className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
+            />
+          )}
           {/* Overlay gradient */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
           

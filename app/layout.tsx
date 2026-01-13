@@ -7,7 +7,11 @@ import RichDataGenerator, {
   generateLodgingBusinessSchema,
 } from '@/components/RichDataGenerator';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['system-ui', 'arial'],
+});
 
 // Metadata ottimizzati per AI e SEO
 export const metadata: Metadata = {
