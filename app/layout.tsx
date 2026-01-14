@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Logo from '@/components/Logo';
+import Header from '@/components/Header';
 import RichDataGenerator, {
   generateOrganizationSchema,
   generateLodgingBusinessSchema,
@@ -106,75 +106,7 @@ export default function RootLayout({
           Vai al contenuto principale
         </a>
         
-        <header role="banner" className="bg-white border-b border-mountain-fog sticky top-0 z-50">
-          <nav
-            role="navigation"
-            aria-label="Navigazione principale"
-            className="container mx-auto px-6 py-4"
-          >
-            <div className="flex justify-between items-center">
-              <a href="/" aria-label="Torna alla home" className="hover:opacity-80 transition-opacity">
-                <Logo className="h-12 w-auto" />
-              </a>
-              <ul className="hidden md:flex gap-6 items-center" role="menubar">
-                <li role="none">
-                  <a
-                    href="/"
-                    role="menuitem"
-                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
-                  >
-                    Home
-                  </a>
-                </li>
-                <li role="none">
-                  <a
-                    href="/appartamenti"
-                    role="menuitem"
-                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
-                  >
-                    Appartamenti
-                  </a>
-                </li>
-                <li role="none">
-                  <a
-                    href="/galleria"
-                    role="menuitem"
-                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
-                  >
-                    Galleria
-                  </a>
-                </li>
-                <li role="none">
-                  <a
-                    href="/guida-valtellina"
-                    role="menuitem"
-                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
-                  >
-                    Guida
-                  </a>
-                </li>
-                <li role="none">
-                  <a
-                    href="/faq"
-                    role="menuitem"
-                    className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
-                  >
-                    FAQ
-                  </a>
-                </li>
-                <li role="none">
-                  <a
-                    href="mailto:info@apricamountainlodge.it"
-                    role="menuitem"
-                    className="bg-mountain-pine text-white px-5 py-2.5 rounded-lg hover:bg-opacity-90 transition-all text-sm font-semibold shadow-sm"
-                  >
-                    Contatti
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+        <Header />
 
         <main id="main-content" role="main">
           {children}
