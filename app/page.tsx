@@ -3,6 +3,7 @@ import appartamentiData from '@/data/appartamenti.json';
 import locales from '@/locales/it.json';
 import HeroSlideshow from '@/components/HeroSlideshow';
 import ApartmentCard from '@/components/ApartmentCard';
+import Testimonials from '@/components/Testimonials';
 import { IconWasher, IconWifi, IconTv, IconShower, IconGarage } from '@/components/Icons';
 
 export const metadata: Metadata = {
@@ -246,6 +247,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* CTA Section - Elegant with Glassmorphism */}
       <section className="container mx-auto px-4 py-24">
