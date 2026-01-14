@@ -115,7 +115,7 @@ export default function HomePage() {
                 Distanza Impianti
               </dt>
               <dd className="text-gray-700 text-center">
-                <div className="text-5xl font-bold text-mountain-pine mb-2">800m</div>
+                <div className="text-5xl font-bold text-mountain-pine mb-2">600m</div>
                 <p className="text-sm">10 minuti a piedi</p>
                 <p className="text-xs text-gray-500 mt-1">Funivia Aprica-Magnolta</p>
               </dd>
@@ -224,7 +224,7 @@ export default function HomePage() {
               <div className="text-7xl mb-6 text-center transform group-hover:scale-110 transition-transform duration-500">⛷️</div>
               <h3 className="font-bold text-2xl mb-4 text-center text-mountain-pine">Impianti Sciistici</h3>
               <p className="text-gray-700 text-center">
-                <span className="text-4xl font-bold block mb-3 bg-gradient-to-r from-mountain-pine to-mountain-wood bg-clip-text text-transparent">800m</span>
+                <span className="text-4xl font-bold block mb-3 bg-gradient-to-r from-mountain-pine to-mountain-wood bg-clip-text text-transparent">600m</span>
                 Funivia Aprica-Magnolta
               </p>
             </article>

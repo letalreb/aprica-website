@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <header role="banner" className="bg-white border-b border-mountain-fog sticky top-0 z-50">
+    <header role="banner" className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm">
       <nav
         role="navigation"
         aria-label="Navigazione principale"
@@ -23,7 +23,7 @@ export default function Header() {
       >
         <div className="flex justify-between items-center">
           <a href="/" aria-label="Torna alla home" className="hover:opacity-80 transition-opacity">
-            <Logo className="h-12 w-auto" />
+            <Logo className="h-16 w-auto brightness-0 invert" />
           </a>
 
           {/* Desktop Menu */}
@@ -32,7 +32,7 @@ export default function Header() {
               <a
                 href="/"
                 role="menuitem"
-                className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
+                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 Home
               </a>
@@ -41,7 +41,7 @@ export default function Header() {
               <a
                 href="/appartamenti"
                 role="menuitem"
-                className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
+                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 Appartamenti
               </a>
@@ -50,7 +50,7 @@ export default function Header() {
               <a
                 href="/galleria"
                 role="menuitem"
-                className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
+                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 Galleria
               </a>
@@ -59,7 +59,7 @@ export default function Header() {
               <a
                 href="/guida-valtellina"
                 role="menuitem"
-                className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
+                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 Guida
               </a>
@@ -68,7 +68,7 @@ export default function Header() {
               <a
                 href="/faq"
                 role="menuitem"
-                className="text-mountain-stone hover:text-mountain-pine transition-colors text-sm font-medium"
+                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 FAQ
               </a>
@@ -77,7 +77,7 @@ export default function Header() {
               <a
                 href="mailto:info@apricamountainlodge.it"
                 role="menuitem"
-                className="bg-mountain-pine text-white px-5 py-2.5 rounded-lg hover:bg-opacity-90 transition-all text-sm font-semibold shadow-sm"
+                className="bg-white text-mountain-pine px-5 py-2.5 rounded-lg hover:bg-white/90 transition-all text-sm font-semibold shadow-sm"
               >
                 Contatti
               </a>
@@ -86,23 +86,23 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none focus:ring-2 focus:ring-mountain-pine rounded"
+            className="md:hidden flex flex-col gap-1.5 p-2 focus:outline-none focus:ring-2 focus:ring-white rounded"
             onClick={toggleMobileMenu}
             aria-label={mobileMenuOpen ? 'Chiudi menu' : 'Apri menu'}
             aria-expanded={mobileMenuOpen}
           >
             <span
-              className={`block h-0.5 w-6 bg-mountain-stone transition-all duration-300 ${
+              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
                 mobileMenuOpen ? 'rotate-45 translate-y-2' : ''
               }`}
             ></span>
             <span
-              className={`block h-0.5 w-6 bg-mountain-stone transition-all duration-300 ${
+              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
                 mobileMenuOpen ? 'opacity-0' : ''
               }`}
             ></span>
             <span
-              className={`block h-0.5 w-6 bg-mountain-stone transition-all duration-300 ${
+              className={`block h-0.5 w-6 bg-white transition-all duration-300 ${
                 mobileMenuOpen ? '-rotate-45 -translate-y-2' : ''
               }`}
             ></span>
@@ -115,13 +115,13 @@ export default function Header() {
             mobileMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
           }`}
         >
-          <ul className="flex flex-col gap-4 py-4" role="menu">
+          <ul className="flex flex-col gap-4 py-4 bg-black/80 backdrop-blur-md rounded-lg px-4" role="menu">
             <li role="none">
               <a
                 href="/"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block text-mountain-stone hover:text-mountain-pine transition-colors text-base font-medium py-2"
+                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 Home
               </a>
@@ -131,7 +131,7 @@ export default function Header() {
                 href="/appartamenti"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block text-mountain-stone hover:text-mountain-pine transition-colors text-base font-medium py-2"
+                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 Appartamenti
               </a>
@@ -141,7 +141,7 @@ export default function Header() {
                 href="/galleria"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block text-mountain-stone hover:text-mountain-pine transition-colors text-base font-medium py-2"
+                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 Galleria
               </a>
@@ -151,7 +151,7 @@ export default function Header() {
                 href="/guida-valtellina"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block text-mountain-stone hover:text-mountain-pine transition-colors text-base font-medium py-2"
+                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 Guida
               </a>
@@ -161,7 +161,7 @@ export default function Header() {
                 href="/faq"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block text-mountain-stone hover:text-mountain-pine transition-colors text-base font-medium py-2"
+                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 FAQ
               </a>
@@ -171,7 +171,7 @@ export default function Header() {
                 href="mailto:info@apricamountainlodge.it"
                 role="menuitem"
                 onClick={closeMobileMenu}
-                className="block bg-mountain-pine text-white px-5 py-3 rounded-lg hover:bg-opacity-90 transition-all text-base font-semibold shadow-sm text-center"
+                className="block bg-white text-mountain-pine px-5 py-3 rounded-lg hover:bg-white/90 transition-all text-base font-semibold shadow-sm text-center"
               >
                 Contatti
               </a>

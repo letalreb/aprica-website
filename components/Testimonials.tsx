@@ -27,7 +27,7 @@ export default function Testimonials() {
     {
       name: 'Laura & Paolo',
       location: 'Monza',
-      date: 'Dicembre 2025',
+      date: 'Gennaio 2026',
       rating: 5,
       text: 'Che dire... semplicemente perfetto! Dall\'accoglienza alla pulizia, dalla posizione alla dotazione dell\'appartamento. Il box auto è stato provvidenziale con tutta la neve che c\'era. Vista stupenda sulle montagne. Una vacanza da sogno, grazie di cuore!',
       avatar: 'LP',
@@ -43,7 +43,7 @@ export default function Testimonials() {
     {
       name: 'Stefania',
       location: 'Lecco',
-      date: 'Dicembre 2025',
+      date: 'Gennaio 2026',
       rating: 5,
       text: 'Weekend perfetto con il mio compagno! L\'appartamento è nuovo, pulito e arredato con gusto. La cucina a induzione è fantastica e c\'è davvero tutto. Zona tranquilla, parcheggio comodo. Aprica è un gioiello e questo appartamento lo valorizza. Ci ritorneremo presto!',
       avatar: 'S',

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: '%s | Aprica Mountain Lodge',
   },
   description:
-    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 800m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
+    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 600m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
   keywords: [
     'case vacanze Aprica',
     'appartamenti Aprica',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto',
     description:
-      '4 appartamenti accoglienti ad Aprica a 800m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
+      '4 appartamenti accoglienti ad Aprica a 600m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
     url: 'https://apricamountainlodge.it',
     siteName: 'Aprica Mountain Lodge',
     locale: 'it_IT',
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Case Vacanze Aprica Mountain Lodge',
-    description: '4 appartamenti per 20 posti ad Aprica. A 800m dagli impianti sciistici.',
+    description: '4 appartamenti per 20 posti ad Aprica. A 600m dagli impianti sciistici.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -121,7 +121,7 @@ export default function RootLayout({
                   <div className="text-sm text-mountain-fog">Mountain Lodge</div>
                 </div>
                 <p className="text-gray-200 text-sm leading-relaxed">
-                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 800m dagli impianti sciistici.
+                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 600m dagli impianti sciistici.
                 </p>
               </section>
 

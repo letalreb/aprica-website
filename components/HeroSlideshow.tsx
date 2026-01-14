@@ -31,7 +31,7 @@ const slides: Slide[] = [
   {
     type: 'image',
     src: '/images/IMG_20251220_163427.jpg',
-    title: 'A 800m dagli Impianti',
+    title: 'A 600m dagli Impianti',
     subtitle: 'Posizione ideale per sciatori e amanti della montagna',
   },
   {
@@ -72,7 +72,7 @@ export default function HeroSlideshow() {
   };
 
   return (
-    <div className="relative h-[70vh] min-h-[500px] overflow-hidden bg-gray-900" role="region" aria-label="Slideshow delle immagini della struttura">
+    <div className="relative h-screen w-full overflow-hidden bg-gray-900" role="region" aria-label="Slideshow delle immagini della struttura">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -89,58 +89,94 @@ export default function HeroSlideshow() {
               muted
               loop
               playsInline
-              className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
+              className="w-full h-full object-cover"
             />
           ) : (
             <img
               src={slide.src}
               alt={slide.title}
-              className="w-full h-full object-cover brightness-105 contrast-110 saturate-110"
+              className="w-full h-full object-cover"
             />
           )}
-          {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+          {/* Overlay gradient - più marcato per leggibilità */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/80" />
           
-          {/* Content */}
-          <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-            <div className="max-w-4xl">
+          {/* Content - Centrato in stile Plum Guide */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <div className="max-w-5xl">
               <h1
-                className={`text-5xl md:text-7xl font-bold text-white mb-4 transition-all duration-700 ${
+                className={`text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight transition-all duration-700 ${
                   index === currentSlide
                     ? 'translate-y-0 opacity-100'
-                    : 'translate-y-4 opacity-0'
+                    : 'translate-y-8 opacity-0'
                 }`}
               >
                 {slide.title}
               </h1>
               <p
-                className={`text-xl md:text-2xl text-white/90 mb-8 transition-all duration-700 delay-100 ${
+                className={`text-xl md:text-2xl lg:text-3xl text-white mb-12 font-light transition-all duration-700 delay-100 ${
                   index === currentSlide
                     ? 'translate-y-0 opacity-100'
-                    : 'translate-y-4 opacity-0'
+                    : 'translate-y-8 opacity-0'
                 }`}
               >
                 {slide.subtitle}
               </p>
-              <a
-                href="/appartamenti"
-                className={`inline-block bg-white text-aprica-blue px-8 py-4 rounded-full font-bold text-lg hover:bg-aprica-snow transition-all shadow-lg hover:shadow-xl transform hover:scale-105 ${
+              <div
+                className={`flex flex-col sm:flex-row gap-4 justify-center transition-all duration-700 delay-200 ${
                   index === currentSlide
                     ? 'translate-y-0 opacity-100'
-                    : 'translate-y-4 opacity-0'
-                } transition-all duration-700 delay-200`}
+                    : 'translate-y-8 opacity-0'
+                }`}
               >
-                Scopri gli Appartamenti →
-              </a>
+                <a
+                  href="/appartamenti"
+                  className="inline-block bg-white text-mountain-pine px-10 py-5 rounded-full font-semibold text-lg hover:bg-white/90 transition-all shadow-2xl hover:shadow-3xl transform hover:scale-105"
+                >
+                  Scopri gli Appartamenti
+                </a>
+                <a
+                  href="mailto:info@apricamountainlodge.it"
+                  className="inline-block bg-white/10 backdrop-blur-md text-white border-2 border-white px-10 py-5 rounded-full font-semibold text-lg hover:bg-white/20 transition-all shadow-2xl"
+                >
+                  Richiedi Disponibilità
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Scroll indicator - in basso */}
+          <div
+            className={`absolute bottom-4 left-1/2 -translate-x-1/2 transition-all duration-700 delay-300 ${
+              index === currentSlide
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-4 opacity-0'
+            }`}
+          >
+            <div className="flex flex-col items-center gap-2 text-white/70">
+              <span className="text-sm font-light">Scorri per scoprire</span>
+              <svg
+                className="w-6 h-6 animate-bounce"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
             </div>
           </div>
         </div>
       ))}
 
-      {/* Navigation Arrows */}
+      {/* Navigation Arrows - più minimalisti */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white p-3 rounded-full transition-all hover:scale-110"
+        className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-4 rounded-full transition-all hover:scale-110 focus:ring-4 focus:ring-white/30 focus:outline-none"
         aria-label="Slide precedente"
       >
         <svg
@@ -159,7 +195,7 @@ export default function HeroSlideshow() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/40 backdrop-blur-sm text-white p-4 rounded-full transition-all hover:scale-110 focus:ring-4 focus:ring-white/50 focus:outline-none touch-target"
+        className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white p-4 rounded-full transition-all hover:scale-110 focus:ring-4 focus:ring-white/30 focus:outline-none"
         aria-label="Vai alla slide successiva"
         type="button"
       >
@@ -178,8 +214,8 @@ export default function HeroSlideshow() {
         </svg>
       </button>
 
-      {/* Dots Navigation */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
+      {/* Dots Navigation - posizionati più in basso */}
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-3 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -187,7 +223,7 @@ export default function HeroSlideshow() {
             className={`transition-all ${
               index === currentSlide
                 ? 'w-12 bg-white'
-                : 'w-3 bg-white/50 hover:bg-white/75'
+                : 'w-3 bg-white/40 hover:bg-white/60'
             } h-3 rounded-full`}
             aria-label={`Vai alla slide ${index + 1}`}
           />

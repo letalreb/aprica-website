@@ -6,7 +6,7 @@ import { IconWasher, IconWifi, IconTv, IconShower, IconGarage } from '@/componen
 
 export const metadata: Metadata = {
   title: 'Appartamenti - Case Vacanze Aprica',
-  description: '4 appartamenti accoglienti ad Aprica: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 800m dagli impianti.',
+  description: '4 appartamenti accoglienti ad Aprica: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 600m dagli impianti.',
   alternates: {
     canonical: '/appartamenti',
   },
