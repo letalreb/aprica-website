@@ -6,7 +6,7 @@ import { IconWasher, IconWifi, IconTv, IconShower, IconGarage } from '@/componen
 
 export const metadata: Metadata = {
   title: 'Appartamenti - Case Vacanze Aprica',
-  description: '4 appartamenti accoglienti ad Aprica: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 600m dagli impianti.',
+  description: '4 appartamenti accoglienti ad Aprica: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 800m dagli impianti.',
   alternates: {
     canonical: '/appartamenti',
   },
@@ -50,7 +50,7 @@ export default function AppartamentiPage() {
           <div className="inline-block">
             <div className="bg-white/90 border-2 border-white px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md">
               <p className="text-xs text-gray-600 mb-1">A partire da</p>
-              <p className="text-2xl font-bold text-mountain-pine">€200<span className="text-lg font-normal text-gray-700">/notte</span></p>
+              <p className="text-2xl font-bold text-mountain-pine">€300<span className="text-lg font-normal text-gray-700">/notte</span></p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function AppartamentiPage() {
               <div className="flex justify-center mb-4"><IconGarage className="w-12 h-12 text-mountain-pine" size={48} /></div>
               <h3 className="font-bold text-xl mb-2 text-mountain-pine">Garage Privato</h3>
               <p className="text-gray-700">
-                Box auto coperto e riscaldato per ogni appartamento
+                Box auto coperto per ogni appartamento
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow">

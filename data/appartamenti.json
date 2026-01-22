@@ -4,7 +4,7 @@
       "slug": "appartamento-baradello-4-posti",
       "nome": "Appartamento Baradello",
       "postiLetto": 4,
-      "descrizione": "Bilocale accogliente con cucina con piano cottura a induzione e soggiorno panoramico.",
+      "descrizione": "Bilocale accogliente con cucina con piano cottura a induzione e soggiorno con accesso al terrazzo esclusivo con vista panoramica.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -13,18 +13,39 @@
         "Garage privato coperto",
         "Piano cottura a induzione",
         "Riscaldamento autonomo",
-        "Balcone panoramico"
+        "Balcone",
+        "Terrazzo esclusivo con vista panoramica"
       ],
-      "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
-      "superficieMq": 65,
+      "composizione": "1 camere da letto, 1 bagno, cucina-soggiorno",
+      "superficieMq": 50,
       "piano": 1,
-      "image": "/images/IMG_20251220_163427.jpg"
+      "image": "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg",
+      "immagini": [
+        "/images/app1/IMG_20251128_095112.jpg",
+        "/images/app1/IMG_20251220_120620.jpg",
+        "/images/app1/IMG_20251220_120627.jpg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.58 (1).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.58.jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.59 (2).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.59 (3).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.59 (4).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.59 (5).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.33.59.jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (10).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (2).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (3).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (4).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (5).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.00 (6).jpeg",
+        "/images/app1/WhatsApp Image 2026-01-12 at 22.34.01.jpeg"
+      ]
     },
     {
       "slug": "appartamento-mortirolo-4-posti",
       "nome": "Appartamento Mortirolo",
       "postiLetto": 4,
-      "descrizione": "Bilocale moderno con cucina con piano cottura a induzione e terrazzo con vista montagna.",
+      "descrizione": "Bilocale moderno su due livelli con cucina con piano cottura a induzione e spazio esterno esclusivo.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
@@ -33,54 +54,98 @@
         "Garage privato coperto",
         "Piano cottura a induzione",
         "Riscaldamento autonomo",
-        "Terrazzo"
+        "Balcone",
+        "Spazio esterno esclusivo"
       ],
-      "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
-      "superficieMq": 70,
-      "piano": 2,
-      "image": "/images/IMG_20251220_144302.jpg"
+      "composizione": "1 camera da letto, 1 bagno, cucina-soggiorno",
+      "superficieMq": 50,
+      "piano": 1,
+      "image": "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59 (4).jpeg",
+      "immagini": [
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.58 (1).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.58.jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59 (2).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59 (3).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59 (4).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59 (5).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.33.59.jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (10).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (2).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (3).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (4).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (5).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.00 (6).jpeg",
+        "/images/app3/WhatsApp Image 2026-01-12 at 22.34.01.jpeg"
+      ]
     },
     {
       "slug": "appartamento-magnolta-6-posti",
       "nome": "Appartamento Magnolta",
       "postiLetto": 6,
-      "descrizione": "Trilocale spazioso su due livelli con 2 bagni, cucina con piano cottura a induzione e ampio soggiorno.",
+      "descrizione": "Trilocale spazioso su due livelli con cucina con piano cottura a induzione e ampio soggiorno.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
         "Netflix e TV",
         "Bagno elegante con doccia",
-        "Due bagni moderni",
+        "Bagni moderni",
         "Garage privato coperto",
         "Piano cottura a induzione",
         "Riscaldamento autonomo",
         "Balcone"
       ],
-      "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
-      "superficieMq": 90,
-      "piano": 1,
-      "image": "/images/IMG_20251220_163424.jpg"
+      "composizione": "2 camere da letto, 1 bagni, cucina-soggiorno",
+      "superficieMq": 70,
+      "piano": 2,
+      "image": "/images/app2/IMG_20251220_163424.jpg",
+      "immagini": [
+        "/images/app2/IMG_20250831_120852.jpg",
+        "/images/app2/IMG_20251220_115211.jpg",
+        "/images/app2/IMG_20251220_144302.jpg",
+        "/images/app2/IMG_20251220_144315.jpg",
+        "/images/app2/IMG_20251220_151911.jpg",
+        "/images/app2/IMG_20251220_152054.jpg",
+        "/images/app2/IMG_20251220_163313.jpg",
+        "/images/app2/IMG_20251220_163424.jpg",
+        "/images/app2/IMG_20251220_163427.jpg",
+        "/images/app2/IMG_20251220_163607.jpg",
+        "/images/app2/grok-image-21b201d9-6e19-40ab-8988-148d2892a8eb.png",
+        "/images/app2/grok-image-98dbf509-e5a0-4603-8a37-fad93b851404.png"
+      ]
     },
     {
       "slug": "appartamento-palabione-6-posti",
       "nome": "Appartamento Palabione",
       "postiLetto": 6,
-      "descrizione": "Trilocale panoramico su due livelli con 2 bagni, cucina con piano cottura a induzione e terrazzo vista piste.",
+      "descrizione": "Trilocale panoramico su due livelli con cucina con piano cottura a induzione e ampio soggiorno.",
       "caratteristiche": [
         "Lavatrice e lavastoviglie",
         "Wi-Fi veloce gratuito",
         "Netflix e TV",
         "Bagno elegante con doccia",
-        "Due bagni moderni",
         "Garage privato coperto",
         "Piano cottura a induzione",
         "Riscaldamento autonomo",
-        "Terrazzo panoramico"
+        "Balcone"
       ],
-      "composizione": "3 camere da letto, 2 bagni, cucina-soggiorno",
-      "superficieMq": 95,
-      "piano": 3,
-      "image": "/images/IMG_20251220_163607.jpg"
+      "composizione": "2 camere da letto, 1 bagno, cucina-soggiorno",
+      "superficieMq": 70,
+      "piano": 2,
+      "image": "/images/app4/IMG_20250831_120821.jpg",
+      "immagini": [
+        "/images/app4/IMG_20250831_120821.jpg",
+        "/images/app4/IMG_20250831_120852.jpg",
+        "/images/app4/IMG_20251220_115211.jpg",
+        "/images/app4/IMG_20251220_144302.jpg",
+        "/images/app4/IMG_20251220_144315.jpg",
+        "/images/app4/IMG_20251220_151911.jpg",
+        "/images/app4/IMG_20251220_152054.jpg",
+        "/images/app4/IMG_20251220_163313.jpg",
+        "/images/app4/IMG_20251220_163424.jpg",
+        "/images/app4/IMG_20251220_163427.jpg",
+        "/images/app4/IMG_20251220_163607.jpg"
+      ]
     }
   ],
   "struttura": {
@@ -113,7 +178,8 @@
       "impianti": "800 metri",
       "centro": "200 metri",
       "supermercato": "150 metri",
-      "stazione_bernina": "35 km"
+      "bar": "10 metri",
+      "stazione_bernina": "300 metri"
     }
   }
 }

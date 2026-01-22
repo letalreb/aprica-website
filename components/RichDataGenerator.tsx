@@ -9,7 +9,7 @@ import type {
   QuantitativeValue,
 } from '@/types/schema';
 
-const BASE_URL = 'https://apricamountainlodge.it'; // Sostituire con il dominio reale
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aprica-website.vercel.app';
 
 // Generate Organization Schema
 export function generateOrganizationSchema() {
@@ -91,11 +91,12 @@ interface ApartmentData {
   composizione: string;
   superficieMq: number;
   piano: number;
+  image?: string;
 }
 
 export function generateAccommodationSchema(
   apartment: ApartmentData,
-  lang: string = 'it'
+  _lang: string = 'it'
 ): Accommodation {
   const amenities: PropertyValue[] = apartment.caratteristiche.map((feature) => ({
     '@type': 'LocationFeatureSpecification',
@@ -120,13 +121,17 @@ export function generateAccommodationSchema(
   const bedroomMatch = apartment.composizione.match(/(\d+)\s*camer/i);
   const bathroomMatch = apartment.composizione.match(/(\d+)\s*bagn/i);
 
+  const imageUrl = apartment.image
+    ? `${BASE_URL}${apartment.image.startsWith('/') ? apartment.image : `/${apartment.image}`}`
+    : `${BASE_URL}/images/IMG_20251220_163427.jpg`;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'Apartment',
     name: apartment.nome,
     description: apartment.descrizione,
-    url: `${BASE_URL}/${lang}/appartamento/${apartment.slug}`,
-    image: [`${BASE_URL}${apartment.slug}-1.jpg`],
+    url: `${BASE_URL}/appartamento/${apartment.slug}/`,
+    image: [imageUrl],
     numberOfBedrooms: bedroomMatch ? parseInt(bedroomMatch[1]) : undefined,
     numberOfBathroomsTotal: bathroomMatch ? parseInt(bathroomMatch[1]) : undefined,
     floorSize,

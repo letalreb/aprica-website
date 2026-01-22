@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import FAQSection from '@/components/FAQSection';
 import locales from '@/locales/it.json';
 
@@ -40,21 +41,51 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="mb-6">
-        <ol className="flex gap-2 text-sm text-gray-600">
-          <li>
-            <a href="/" className="hover:text-aprica-blue">
-              Home
-            </a>
-          </li>
-          <li>/</li>
-          <li className="font-semibold" aria-current="page">
-            FAQ
-          </li>
-        </ol>
-      </nav>
+    <div className="min-h-screen">
+      {/* Hero Section with Background Image */}
+      <section className="relative bg-gradient-to-br from-mountain-pine via-mountain-wood to-mountain-pine text-white py-24 overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/images/intro/WhatsApp Image 2026-01-12 at 22.34.00 (1).jpeg"
+            alt="Domande frequenti Aprica Mountain Lodge"
+            fill
+            className="object-cover opacity-50"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-mountain-pine/70 via-mountain-pine/60 to-mountain-pine/80"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <div className="inline-block mb-4">
+            <span className="inline-flex items-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white text-sm font-semibold">
+              ❓ Domande e Risposte
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
+            Domande Frequenti
+          </h1>
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto drop-shadow-md">
+            Risposte alle domande più comuni sulle nostre case vacanze ad Aprica
+          </p>
+        </div>
+      </section>
+
+      <div className="container mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="mb-8">
+          <ol className="flex gap-2 text-sm text-gray-600">
+            <li>
+              <a href="/" className="hover:text-mountain-pine transition">
+                Home
+              </a>
+            </li>
+            <li>/</li>
+            <li className="font-semibold text-mountain-pine" aria-current="page">
+              FAQ
+            </li>
+          </ol>
+        </nav>
 
       <FAQSection faqs={faqs} lang="it" />
 
@@ -86,6 +117,14 @@ export default function FAQPage() {
                 💬 WhatsApp
               </a>
               <a
+                href="https://t.me/+393331234567"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
+              >
+                ✈️ Telegram
+              </a>
+              <a
                 href="tel:+390342123456"
                 className="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8 py-4 rounded-full font-bold hover:shadow-2xl transition-all duration-500 transform hover:scale-105"
               >
@@ -95,6 +134,7 @@ export default function FAQPage() {
           </div>
         </div>
       </section>
+      </div>
     </div>
   );
 }

@@ -7,6 +7,8 @@ import RichDataGenerator, {
   generateLodgingBusinessSchema,
 } from '@/components/RichDataGenerator';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aprica-website.vercel.app';
+
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap',
@@ -15,12 +17,13 @@ const inter = Inter({
 
 // Metadata ottimizzati per AI e SEO
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto - 4 Appartamenti',
     template: '%s | Aprica Mountain Lodge',
   },
   description:
-    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 600m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
+    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 800m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
   keywords: [
     'case vacanze Aprica',
     'appartamenti Aprica',
@@ -46,8 +49,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto',
     description:
-      '4 appartamenti accoglienti ad Aprica a 600m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
-    url: 'https://apricamountainlodge.it',
+      '4 appartamenti accoglienti ad Aprica a 800m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
+    url: '/',
     siteName: 'Aprica Mountain Lodge',
     locale: 'it_IT',
     type: 'website',
@@ -63,7 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Case Vacanze Aprica Mountain Lodge',
-    description: '4 appartamenti per 20 posti ad Aprica. A 600m dagli impianti sciistici.',
+    description: '4 appartamenti per 20 posti ad Aprica. A 800m dagli impianti sciistici.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -86,9 +89,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   // Generate structured data for the entire site
   const organizationSchema = generateOrganizationSchema();
   const lodgingSchema = generateLodgingBusinessSchema();
@@ -121,7 +124,7 @@ export default function RootLayout({
                   <div className="text-sm text-mountain-fog">Mountain Lodge</div>
                 </div>
                 <p className="text-gray-200 text-sm leading-relaxed">
-                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 600m dagli impianti sciistici.
+                  Case vacanze nel cuore di Aprica. 4 appartamenti accoglienti per 20 posti letto totali, a 800m dagli impianti sciistici.
                 </p>
               </section>
 
@@ -167,6 +170,16 @@ export default function RootLayout({
                       WhatsApp
                     </a>
                   </li>
+                  <li>
+                    <a
+                      href="https://t.me/+393331234567"
+                      className="text-gray-200 hover:text-white transition flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Telegram
+                    </a>
+                  </li>
                 </ul>
               </section>
 
@@ -183,11 +196,6 @@ export default function RootLayout({
                   <li>
                     <a href="/appartamenti" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
                       Appartamenti
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/guida-valtellina" className="text-gray-200 hover:text-white transition focus:outline-none focus:ring-2 focus:ring-white/50 rounded px-1">
-                      Guida Valtellina
                     </a>
                   </li>
                   <li>

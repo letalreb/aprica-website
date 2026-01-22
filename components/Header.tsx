@@ -57,15 +57,6 @@ export default function Header() {
             </li>
             <li role="none">
               <a
-                href="/guida-valtellina"
-                role="menuitem"
-                className="text-white hover:text-white/80 transition-colors text-sm font-medium"
-              >
-                Guida
-              </a>
-            </li>
-            <li role="none">
-              <a
                 href="/faq"
                 role="menuitem"
                 className="text-white hover:text-white/80 transition-colors text-sm font-medium"
@@ -144,16 +135,6 @@ export default function Header() {
                 className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
               >
                 Galleria
-              </a>
-            </li>
-            <li role="none">
-              <a
-                href="/guida-valtellina"
-                role="menuitem"
-                onClick={closeMobileMenu}
-                className="block text-white hover:text-white/80 transition-colors text-base font-medium py-2"
-              >
-                Guida
               </a>
             </li>
             <li role="none">

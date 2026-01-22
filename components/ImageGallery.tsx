@@ -2,13 +2,26 @@
 
 import { useState } from 'react';
 
+type GalleryImage =
+  | string
+  | {
+      src: string;
+      alt: string;
+    };
+
 interface ImageGalleryProps {
-  images: string[];
+  images: GalleryImage[];
   title?: string;
 }
 
 export default function ImageGallery({ images, title }: ImageGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
+  const getSrc = (image: GalleryImage) => (typeof image === 'string' ? image : image.src);
+  const getAlt = (image: GalleryImage, index: number) =>
+    typeof image === 'string'
+      ? `Foto ${index + 1} degli appartamenti Aprica Mountain Lodge ad Aprica (SO)`
+      : image.alt;
 
   const openLightbox = (index: number) => {
     setSelectedImage(index);
@@ -44,17 +57,19 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
         )}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <div
+            <button
               key={index}
               className="aspect-square overflow-hidden rounded-lg hover:opacity-90 transition-opacity cursor-pointer group"
               onClick={() => openLightbox(index)}
+              type="button"
+              aria-label={getAlt(image, index)}
             >
               <img
-                src={image}
-                alt={`Immagine ${index + 1}`}
+                src={getSrc(image)}
+                alt={getAlt(image, index)}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 brightness-105 contrast-110 saturate-110"
               />
-            </div>
+            </button>
           ))}
         </div>
       </section>
@@ -94,8 +109,8 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={images[selectedImage]}
-              alt={`Immagine ${selectedImage + 1}`}
+              src={getSrc(images[selectedImage])}
+              alt={getAlt(images[selectedImage], selectedImage)}
               className="max-w-full max-h-[90vh] object-contain mx-auto brightness-105 contrast-110 saturate-110"
             />
             {/* Counter */}

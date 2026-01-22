@@ -50,10 +50,12 @@ export default function Testimonials() {
     },
   ];
 
-  // Seleziona 3 recensioni random
-  const testimonials = allTestimonials
-    .sort(() => Math.random() - 0.5)
-    .slice(0, 3);
+  // Selezione deterministica (più citabile da AI e consistente per gli utenti)
+  const testimonials = [
+    allTestimonials.find((t) => t.avatar === 'FB'),
+    allTestimonials.find((t) => t.avatar === 'S'),
+    allTestimonials.find((t) => t.avatar === 'LP'),
+  ].filter(Boolean) as typeof allTestimonials;
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-mountain-mist/20">
@@ -70,7 +72,7 @@ export default function Testimonials() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
-              key={index}
+              key={`${testimonial.avatar}-${testimonial.date}`}
               className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-8 border border-mountain-fog/30"
             >
               {/* Header */}
@@ -90,9 +92,9 @@ export default function Testimonials() {
 
               {/* Rating */}
               <div className="flex gap-1 mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
+                {[1, 2, 3, 4, 5].slice(0, testimonial.rating).map((star) => (
                   <svg
-                    key={i}
+                    key={`${testimonial.avatar}-star-${star}`}
                     className="w-5 h-5 fill-amber-400"
                     viewBox="0 0 20 20"
                   >
