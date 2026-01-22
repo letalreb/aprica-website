@@ -203,7 +203,7 @@ export default function GalleriaPage() {
             </span>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold mb-6 drop-shadow-lg">
-            Le Nostre Foto
+            Galleria Fotografica
           </h1>
           <p className="text-xl text-gray-100 max-w-3xl mx-auto drop-shadow-md">
             Scopri i nostri appartamenti attraverso le immagini. Interni accoglienti, 

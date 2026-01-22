@@ -151,7 +151,7 @@ export default function HomePage() {
                   <span>✨</span> Dotazioni Standard
                 </dt>
                 <dd className="text-gray-700 text-sm">
-                  Piano cottura a induzione, Lavastoviglie, Lavatrice, Wi-Fi, Riscaldamento autonomo
+                  Piano cottura a induzione, Lavastoviglie, Lavatrice, Wi-Fi, Riscaldamento autonomo con controllo remoto
                 </dd>
               </div>
             </div>
