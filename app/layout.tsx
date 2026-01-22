@@ -6,6 +6,7 @@ import RichDataGenerator, {
   generateOrganizationSchema,
   generateLodgingBusinessSchema,
 } from '@/components/RichDataGenerator';
+import { Analytics } from '@vercel/analytics/next';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aprica-website.vercel.app';
 
@@ -214,6 +215,7 @@ export default function RootLayout({
             </div>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
