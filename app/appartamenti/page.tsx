@@ -45,12 +45,10 @@ export default function AppartamentiPage() {
           <p className="text-xl text-gray-100 drop-shadow-md mb-6">
             {totalBeds} posti letto totali • Tutti con box auto privato
           </p>
-          
-          {/* Pricing Badge */}
+
           <div className="inline-block">
             <div className="bg-white/90 border-2 border-white px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md">
-              <p className="text-xs text-gray-600 mb-1">A partire da</p>
-              <p className="text-2xl font-bold text-mountain-pine">€300<span className="text-lg font-normal text-gray-700">/notte</span></p>
+              <p className="text-2xl font-bold text-mountain-pine">Richiedi info</p>
             </div>
           </div>
         </div>

@@ -44,7 +44,6 @@ export interface LodgingBusiness {
   geo: GeoCoordinates;
   telephone: string;
   email: string;
-  priceRange?: string;
   starRating?: Rating;
   amenityFeature?: PropertyValue[];
   numberOfRooms?: number;

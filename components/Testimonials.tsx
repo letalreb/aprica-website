@@ -13,7 +13,7 @@ export default function Testimonials() {
       location: 'Bergamo',
       date: 'Dicembre 2025',
       rating: 5,
-      text: 'Una settimana indimenticabile! L\'appartamento è spazioso, moderno e dotato di ogni comfort. La posizione è strategica: in 10 minuti a piedi sei sulle piste. Il proprietario disponibilissimo e gentile. Rapporto qualità-prezzo imbattibile. Consigliatissimo!',
+      text: 'Una settimana indimenticabile! L\'appartamento è spazioso, moderno e dotato di ogni comfort. La posizione è strategica: in 10 minuti a piedi sei sulle piste. Il proprietario disponibilissimo e gentile. Qualità e servizi imbattibili. Consigliatissimo!',
       avatar: 'FR',
     },
     {

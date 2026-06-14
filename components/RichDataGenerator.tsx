@@ -74,7 +74,6 @@ export function generateLodgingBusinessSchema(): LodgingBusiness {
     geo,
     telephone: '+39-0342-123456',
     email: 'info@apricamountainlodge.it',
-    priceRange: '€€',
     amenityFeature: amenities,
     numberOfRooms: 4,
     petsAllowed: true,
