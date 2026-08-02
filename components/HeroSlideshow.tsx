@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 interface Slide {
   type: 'image' | 'video';
@@ -68,10 +68,13 @@ const slides: Slide[] = [
 
 const HERO_BACKGROUND_FALLBACK = '/images/intro/IMG_20251220_163427.jpg';
 
+const SWIPE_THRESHOLD = 50;
+
 export default function HeroSlideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  const touchStart = useRef({ x: 0, y: 0 });
 
   useEffect(() => {
     const mediaQuery = globalThis.matchMedia('(prefers-reduced-motion: reduce)');
@@ -124,6 +127,24 @@ export default function HeroSlideshow() {
     setIsAutoPlaying((prev) => !prev);
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const deltaX = e.changedTouches[0].clientX - touchStart.current.x;
+    const deltaY = e.changedTouches[0].clientY - touchStart.current.y;
+
+    // Ignore mostly-vertical swipes so the gesture doesn't fight page scrolling
+    if (Math.abs(deltaX) < Math.abs(deltaY) || Math.abs(deltaX) < SWIPE_THRESHOLD) return;
+
+    if (deltaX < 0) {
+      nextSlide();
+    } else {
+      prevSlide();
+    }
+  };
+
   const activeSlide = slides[currentSlide];
 
   const renderBackgroundMedia = (slide: Slide) => {
@@ -166,6 +187,8 @@ export default function HeroSlideshow() {
     <section
       className="relative h-screen w-full overflow-hidden bg-gray-900"
       aria-label="Hero slideshow Aprica Mountain Lodge"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Background slides (decorative) */}
       {slides.map((slide, index) => (
@@ -188,7 +211,7 @@ export default function HeroSlideshow() {
 
       {/* Content (SEO/LLM stable: single H1) */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-        <div className="max-w-5xl">
+        <div className="max-w-5xl w-full">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
             Aprica Mountain Lodge
           </h1>

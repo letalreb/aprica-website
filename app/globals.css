@@ -12,6 +12,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -23,6 +27,34 @@ body {
   font-feature-settings: 'kern' 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-y: none;
+}
+
+/* Remove the gray flash Android/iOS show on tap so buttons feel native */
+a,
+button,
+[role='button'] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* Native-style press feedback: immediate scale-down while finger/pointer is down */
+a:active,
+button:active {
+  transform: scale(0.96);
+}
+
+/* Safe-area insets for notched devices (iPhone) */
+.pt-safe {
+  padding-top: env(safe-area-inset-top);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mb-safe {
+  margin-bottom: env(safe-area-inset-bottom);
 }
 
 @layer utilities {
@@ -113,14 +145,22 @@ body {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.card-elegant:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+/* Guarded by (hover: hover) so touch devices don't get a "stuck" hover state after a tap */
+@media (hover: hover) and (pointer: fine) {
+  .card-elegant:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
 }
 
-/* Smooth transitions for all interactive elements */
+.card-elegant:active {
+  transform: scale(0.98);
+}
+
+/* Smooth transitions for all interactive elements (transform gets a snappier duration for tap feedback) */
 a, button {
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Enhanced focus states for keyboard navigation */

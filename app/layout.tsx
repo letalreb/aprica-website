@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
+import MobileActionBar from '@/components/MobileActionBar';
 import RichDataGenerator, {
   generateOrganizationSchema,
   generateLodgingBusinessSchema,
@@ -19,6 +20,9 @@ const inter = Inter({
 export const viewport: Viewport = {
   themeColor: '#1A3A2E',
   colorScheme: 'light',
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 };
 
 // Metadata ottimizzati per AI e SEO
@@ -51,6 +55,11 @@ export const metadata: Metadata = {
     email: true,
     address: true,
     telephone: true,
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'Aprica Mountain Lodge',
   },
   alternates: {
     canonical: '/',
@@ -122,7 +131,9 @@ export default function RootLayout({
           {children}
         </main>
 
-        <footer role="contentinfo" className="bg-mountain-pine text-white mt-20">
+        <MobileActionBar />
+
+        <footer role="contentinfo" className="bg-mountain-pine text-white mt-20 pb-16 md:pb-0">
           <div className="container mx-auto px-6 py-16">
             <div className="grid md:grid-cols-4 gap-12 mb-12">
               <section aria-labelledby="footer-about">

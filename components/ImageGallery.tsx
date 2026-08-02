@@ -1,6 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+
+const SWIPE_THRESHOLD = 50;
 
 type GalleryImage =
   | string
@@ -16,6 +18,19 @@ interface ImageGalleryProps {
 
 export default function ImageGallery({ images, title }: ImageGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const touchStart = useRef({ x: 0, y: 0 });
+
+  // Lock background scroll while the lightbox is open, like a native modal
+  useEffect(() => {
+    if (selectedImage === null) return;
+
+    const { overflow } = document.body.style;
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [selectedImage]);
 
   const getSrc = (image: GalleryImage) => (typeof image === 'string' ? image : image.src);
   const getAlt = (image: GalleryImage, index: number) =>
@@ -49,6 +64,23 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
     if (e.key === 'ArrowRight') goToNext();
   };
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const deltaX = e.changedTouches[0].clientX - touchStart.current.x;
+    const deltaY = e.changedTouches[0].clientY - touchStart.current.y;
+
+    if (Math.abs(deltaX) < Math.abs(deltaY) || Math.abs(deltaX) < SWIPE_THRESHOLD) return;
+
+    if (deltaX < 0) {
+      goToNext();
+    } else {
+      goToPrevious();
+    }
+  };
+
   return (
     <>
       <section className="py-8">
@@ -77,9 +109,11 @@ export default function ImageGallery({ images, title }: ImageGalleryProps) {
       {/* Lightbox Modal */}
       {selectedImage !== null && (
         <div
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center"
+          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center overscroll-contain pt-safe pb-safe"
           onClick={closeLightbox}
           onKeyDown={handleKeyDown}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
           tabIndex={0}
         >
           {/* Close Button */}

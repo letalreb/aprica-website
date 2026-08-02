@@ -1,10 +1,13 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Logo from '@/components/Logo';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isHidden, setIsHidden] = useState(false);
+  const lastScrollY = useRef(0);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
@@ -14,8 +17,42 @@ export default function Header() {
     setMobileMenuOpen(false);
   };
 
+  useEffect(() => {
+    lastScrollY.current = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      setIsScrolled(currentScrollY > 40);
+
+      // Reveal on scroll-up, hide on scroll-down (app-bar behavior), never hide near the top
+      if (currentScrollY < 80) {
+        setIsHidden(false);
+      } else if (currentScrollY > lastScrollY.current) {
+        setIsHidden(true);
+        setMobileMenuOpen(false);
+      } else {
+        setIsHidden(false);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <header role="banner" className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm">
+    <header
+      role="banner"
+      className={`fixed top-0 left-0 right-0 z-50 pt-safe transition-all duration-300 ease-out ${
+        isHidden ? '-translate-y-full' : 'translate-y-0'
+      } ${
+        isScrolled
+          ? 'bg-mountain-pine/95 backdrop-blur-md shadow-lg'
+          : 'bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm'
+      }`}
+    >
       <nav
         role="navigation"
         aria-label="Navigazione principale"
