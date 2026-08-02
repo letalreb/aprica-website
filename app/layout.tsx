@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
@@ -16,16 +16,24 @@ const inter = Inter({
   fallback: ['system-ui', 'arial'],
 });
 
+export const viewport: Viewport = {
+  themeColor: '#1A3A2E',
+  colorScheme: 'light',
+};
+
 // Metadata ottimizzati per AI e SEO
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto - 4 Appartamenti',
+    default: 'Appartamenti Indipendenti Aprica | Aprica Mountain Lodge - 20 Posti Letto',
     template: '%s | Aprica Mountain Lodge',
   },
   description:
-    'Case vacanze ad Aprica: 4 appartamenti per 20 posti letto totali. A 800m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. Ideale per famiglie e gruppi.',
+    'Appartamenti indipendenti ad Aprica: 4 alloggi autonomi, ingresso proprio, senza reception né aree condivise, per 20 posti letto totali. A 800m dagli impianti sciistici. Box auto privato, cucina a induzione, lavastoviglie. A partire da €60/notte.',
   keywords: [
+    'appartamenti indipendenti Aprica',
+    'casa vacanza indipendente Aprica',
+    'affitto indipendente Aprica',
     'case vacanze Aprica',
     'appartamenti Aprica',
     'affitto Aprica',
@@ -48,16 +56,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Case Vacanze Aprica Mountain Lodge | 20 Posti Letto',
+    title: 'Appartamenti Indipendenti Aprica | Aprica Mountain Lodge',
     description:
-      '4 appartamenti accoglienti ad Aprica a 800m dagli impianti. Box privato, cucina completa, Wi-Fi. Perfetto per famiglie.',
+      '4 appartamenti indipendenti ad Aprica a 800m dagli impianti, ingresso autonomo e senza reception. Box privato, cucina completa, Wi-Fi. A partire da €60/notte.',
     url: '/',
     siteName: 'Aprica Mountain Lodge',
     locale: 'it_IT',
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/images/panorama-passo-mortirolo-aprica-hd.jpg',
         width: 1200,
         height: 630,
         alt: 'Case Vacanze Aprica Mountain Lodge',
@@ -68,7 +76,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Case Vacanze Aprica Mountain Lodge',
     description: '4 appartamenti per 20 posti ad Aprica. A 800m dagli impianti sciistici.',
-    images: ['/og-image.jpg'],
+    images: ['/images/panorama-passo-mortirolo-aprica-hd.jpg'],
   },
   robots: {
     index: true,

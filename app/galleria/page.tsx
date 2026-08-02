@@ -3,10 +3,30 @@ import Image from 'next/image';
 import ImageGallery from '@/components/ImageGallery';
 
 export const metadata: Metadata = {
-  title: 'Galleria Foto - Case Vacanze Aprica',
-  description: 'Scopri le foto dei nostri appartamenti ad Aprica. Interni moderni, viste panoramiche sulle montagne e servizi di qualità.',
+  title: 'Galleria Foto - Appartamenti Indipendenti Aprica',
+  description: 'Scopri le foto dei nostri appartamenti indipendenti ad Aprica. Interni moderni, viste panoramiche sulle montagne e servizi di qualità.',
   alternates: {
-    canonical: '/galleria',
+    canonical: '/galleria/',
+  },
+  openGraph: {
+    title: 'Galleria Foto - Appartamenti Indipendenti Aprica',
+    description: 'Foto dei nostri appartamenti indipendenti ad Aprica: interni moderni e viste panoramiche.',
+    url: '/galleria/',
+    type: 'website',
+    images: [
+      {
+        url: '/images/intro/IMG_20251220_163427.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Galleria foto Aprica Mountain Lodge',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Galleria Foto - Appartamenti Indipendenti Aprica',
+    description: 'Foto dei nostri appartamenti indipendenti ad Aprica.',
+    images: ['/images/intro/IMG_20251220_163427.jpg'],
   },
 };
 

@@ -7,9 +7,9 @@ import Testimonials from '@/components/Testimonials';
 import { IconWasher, IconWifi, IconTv, IconShower, IconGarage } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'Home - Case Vacanze ad Aprica',
+  title: 'Appartamenti Indipendenti ad Aprica',
   description:
-    '4 appartamenti accoglienti ad Aprica per un totale di 20 posti letto. A soli 800 metri dagli impianti sciistici, con box auto privato e ogni comfort.',
+    '4 appartamenti indipendenti ad Aprica, senza reception né aree condivise, per un totale di 20 posti letto. A soli 800 metri dagli impianti sciistici, con box auto privato e ogni comfort. A partire da €60/notte.',
   alternates: {
     canonical: '/',
   },
@@ -46,7 +46,7 @@ export default function HomePage() {
             <h3 className="text-3xl font-bold text-center mb-12 text-mountain-pine">
               {locales.home.amenitiesTitle}
             </h3>
-            <div className="grid md:grid-cols-5 gap-6">
+            <div className="grid md:grid-cols-4 gap-6">
               <div className="glass p-8 rounded-2xl text-center hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 card-elegant">
                 <div className="flex justify-center mb-4"><IconWasher className="w-12 h-12 text-mountain-pine" size={48} /></div>
                 <p className="text-sm font-bold text-gray-800">Lavatrice e<br />lavastoviglie</p>
@@ -64,8 +64,16 @@ export default function HomePage() {
                 <p className="text-sm font-bold text-gray-800">Bagno elegante<br />con doccia</p>
               </div>
               <div className="glass p-8 rounded-2xl text-center hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 card-elegant">
+                <div className="flex justify-center mb-4 text-4xl">🧊</div>
+                <p className="text-sm font-bold text-gray-800">Frigo</p>
+              </div>
+              <div className="glass p-8 rounded-2xl text-center hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 card-elegant">
                 <div className="flex justify-center mb-4"><IconGarage className="w-12 h-12 text-mountain-pine" size={48} /></div>
-                <p className="text-sm font-bold text-gray-800">Garage<br />privato</p>
+                <p className="text-sm font-bold text-gray-800">Posto auto e<br />box garage</p>
+              </div>
+              <div className="glass p-8 rounded-2xl text-center hover:shadow-2xl transition-all duration-500 transform hover:scale-105 hover:-translate-y-2 card-elegant">
+                <div className="flex justify-center mb-4 text-4xl">🌄</div>
+                <p className="text-sm font-bold text-gray-800">Terrazzo</p>
               </div>
             </div>
           </div>

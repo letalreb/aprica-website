@@ -47,8 +47,11 @@ export default function ApartmentCard({
             <h3 className="text-lg font-bold text-mountain-pine group-hover:text-mountain-sunset transition-colors duration-300">
               {nome}
             </h3>
+            <span className="text-sm font-semibold text-mountain-pine whitespace-nowrap">
+              Da €60<span className="text-gray-500 font-normal">/notte</span>
+            </span>
           </div>
-          
+
           <p className="text-sm text-mountain-stone font-medium">
             {postiLetto} ospiti
           </p>

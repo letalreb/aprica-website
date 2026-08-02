@@ -46,19 +46,25 @@ export async function generateMetadata({
     openGraph: {
       title: `${apartment.nome} - ${apartment.postiLetto} Posti Letto | Aprica`,
       description: apartment.descrizione,
-      url: `/appartamento/${apartment.slug}`,
+      url: `/appartamento/${apartment.slug}/`,
       type: 'website',
       images: [
         {
-          url: apartment.image || '/default-apartment.jpg',
+          url: apartment.image || '/images/panorama-passo-mortirolo-aprica-hd.jpg',
           width: 1200,
           height: 630,
           alt: apartment.nome,
         },
       ],
     },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${apartment.nome} - ${apartment.postiLetto} Posti Letto`,
+      description: apartment.descrizione,
+      images: [apartment.image || '/images/panorama-passo-mortirolo-aprica-hd.jpg'],
+    },
     alternates: {
-      canonical: `/appartamento/${apartment.slug}`,
+      canonical: `/appartamento/${apartment.slug}/`,
     },
   };
 }
@@ -76,7 +82,7 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
   const accommodationSchema = generateAccommodationSchema(apartment, 'it');
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
-    { name: 'Appartamenti', url: '/appartamenti' },
+    { name: 'Appartamenti', url: '/appartamenti/' },
     { name: apartment.nome },
   ]);
 
@@ -130,7 +136,8 @@ export default function AppartamentoPage({ params }: { params: { slug: string } 
 
           <div className="inline-block">
             <div className="bg-white/90 border-2 border-white px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md">
-              <p className="text-2xl font-bold text-mountain-pine">Richiedi info</p>
+              <p className="text-xs text-gray-600 mb-1">A partire da</p>
+              <p className="text-2xl font-bold text-mountain-pine">€60<span className="text-lg font-normal text-gray-700">/notte</span></p>
             </div>
           </div>
         </div>

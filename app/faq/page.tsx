@@ -4,11 +4,31 @@ import FAQSection from '@/components/FAQSection';
 import locales from '@/locales/it.json';
 
 export const metadata: Metadata = {
-  title: 'Domande Frequenti - Case Vacanze Aprica',
+  title: 'Domande Frequenti - Appartamenti Indipendenti Aprica',
   description:
-    'Risposte alle domande più comuni sulle nostre case vacanze ad Aprica: distanza impianti, parcheggio, check-in, dotazioni cucina, Wi-Fi e animali domestici.',
+    'Risposte alle domande più comuni sui nostri appartamenti indipendenti ad Aprica: prezzi, distanza impianti, parcheggio, check-in, dotazioni cucina, Wi-Fi e animali domestici.',
   alternates: {
-    canonical: '/faq',
+    canonical: '/faq/',
+  },
+  openGraph: {
+    title: 'Domande Frequenti - Appartamenti Indipendenti Aprica',
+    description: 'Prezzi, distanza impianti, parcheggio, check-in e dotazioni dei nostri appartamenti indipendenti ad Aprica.',
+    url: '/faq/',
+    type: 'website',
+    images: [
+      {
+        url: '/images/panorama-passo-mortirolo-aprica-hd.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'FAQ Aprica Mountain Lodge',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Domande Frequenti - Appartamenti Indipendenti Aprica',
+    description: 'Prezzi, check-in, dotazioni e distanze dei nostri appartamenti indipendenti ad Aprica.',
+    images: ['/images/panorama-passo-mortirolo-aprica-hd.jpg'],
   },
 };
 
@@ -37,6 +57,14 @@ export default function FAQPage() {
     {
       question: locales.faq.q6,
       answer: locales.faq.a6,
+    },
+    {
+      question: locales.faq.q7,
+      answer: locales.faq.a7,
+    },
+    {
+      question: locales.faq.q8,
+      answer: locales.faq.a8,
     },
   ];
 

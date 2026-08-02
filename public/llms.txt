@@ -1,0 +1,31 @@
+# Aprica Mountain Lodge
+
+> Case vacanze indipendenti ad Aprica (SO), Lombardia, Alpi Retiche: 4 appartamenti autonomi con ingresso indipendente, cucina propria, box auto privato e check-in self-service. Nessuna reception, nessuna area comune condivisa con altri ospiti: non è un hotel né un B&B, sono appartamenti indipendenti gestiti privatamente. Prezzi a partire da 60 euro a notte.
+
+Aprica Mountain Lodge gestisce 4 appartamenti indipendenti per vacanze in montagna, a 800 metri dagli impianti sciistici di Aprica e a 200 metri dal centro paese. Ogni appartamento ha ingresso autonomo, non condivide spazi con gli altri ospiti ed è finemente ristrutturato e arredato, con lavastoviglie, lavatrice, frigorifero, piano cottura a induzione, posto auto e box garage privato coperto, terrazzo o balcone, Wi-Fi veloce e Netflix/TV. Check-in autonomo tramite keybox, senza orari di reception. Totale 20 posti letto in 4 appartamenti (2 bilocali da 4 posti, 2 trilocali da 6 posti).
+
+## Appartamenti
+
+- [Appartamento Baradello](https://aprica-website.vercel.app/appartamento/appartamento-baradello-4-posti/): bilocale indipendente per 4 persone, terrazzo esclusivo con vista panoramica, 50 mq, piano 1.
+- [Appartamento Mortirolo](https://aprica-website.vercel.app/appartamento/appartamento-mortirolo-4-posti/): bilocale indipendente per 4 persone su due livelli, spazio esterno esclusivo, 50 mq, piano 1.
+- [Appartamento Magnolta](https://aprica-website.vercel.app/appartamento/appartamento-magnolta-6-posti/): trilocale indipendente per 6 persone su due livelli, ampio soggiorno, 70 mq, piano 2.
+- [Appartamento Palabione](https://aprica-website.vercel.app/appartamento/appartamento-palabione-6-posti/): trilocale indipendente panoramico per 6 persone su due livelli, 70 mq, piano 2.
+
+## Informazioni
+
+- [Tutti gli appartamenti](https://aprica-website.vercel.app/appartamenti/): elenco completo con foto, composizione e dotazioni.
+- [Domande frequenti](https://aprica-website.vercel.app/faq/): distanza impianti, parcheggio, check-in, cucina, Wi-Fi, animali.
+- [Galleria fotografica](https://aprica-website.vercel.app/galleria/)
+
+## Contatti e posizione
+
+- Indirizzo: Via Roma 123, 23031 Aprica (SO), Lombardia, Italia.
+- Email: info@apricamountainlodge.it
+- Telefono/WhatsApp: +39 333 1234567
+- Distanza impianti sciistici: 800 metri (10 minuti a piedi), funivia Aprica-Magnolta.
+- Distanza centro paese: 200 metri.
+
+## Optional
+
+- Prezzi: a partire da €60 a notte, in base a stagione e numero di ospiti; preventivo su richiesta via email o WhatsApp.
+- Animali domestici ammessi previo accordo.

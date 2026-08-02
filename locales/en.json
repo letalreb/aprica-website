@@ -11,8 +11,8 @@
     "hero": "Your perfect alpine holiday",
     "cta": "Discover apartments",
     "welcome": "Welcome to your new mountain holiday homes",
-    "intro": "Experience the true charm of the mountains without giving up comfort. Our brand-new holiday apartments, recently completed, are designed to offer relaxation, convenience and a warm, welcoming atmosphere all year round.",
-    "amenitiesTitle": "Each apartment is fully equipped with modern amenities",
+    "intro": "Experience the true charm of the mountains without giving up comfort. Our independent apartments, brand-new and recently completed, each have their own entrance and no areas shared with other guests: no reception desk, just your own holiday home.",
+    "amenitiesTitle": "Each apartment is finely renovated and furnished, with dishwasher, washing machine, fridge, parking space and garage box, terrace",
     "description1": "All spaces are new, stylish and carefully designed to make you feel at home, whether you're staying for a short break or a longer holiday.",
     "description2": "The location is perfect: close to the ski slopes, ideal for winter sports lovers, and within easy reach of all essential services such as shops, restaurants and public transport. In summer, enjoy nature, peace and a wide range of outdoor activities.",
     "description3": "A perfect blend of modern comfort and alpine charm awaits you. Your mountain getaway starts here."
@@ -59,7 +59,11 @@
     "q5": "Is Wi-Fi available?",
     "a5": "Yes, free high-speed Wi-Fi in all apartments.",
     "q6": "Can I bring pets?",
-    "a6": "Pets are allowed by prior arrangement. Contact us for more information."
+    "a6": "Pets are allowed by prior arrangement. Contact us for more information.",
+    "q7": "Are the apartments independent or is this a hotel?",
+    "a7": "These are 4 fully independent apartments with their own private entrance and parking space: there is no reception desk and no common areas shared with other guests. Check-in is self-service via keybox.",
+    "q8": "How much does a night cost?",
+    "a8": "Prices start at €60 per night, varying by season, number of guests and apartment. Contact us for a personalized quote."
   },
   "guide": {
     "title": "Valtellina Guide",

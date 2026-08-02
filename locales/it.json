@@ -11,8 +11,8 @@
     "hero": "La tua vacanza perfetta sulle Alpi Retiche",
     "cta": "Scopri gli appartamenti",
     "welcome": "Benvenuti nelle vostre nuove case vacanza in montagna",
-    "intro": "Scoprite il piacere di una vacanza in montagna senza rinunciare a nessun comfort. I nostri splendidi appartamenti di nuova costruzione, appena ultimati, sono pensati per offrirvi relax, praticità e un'atmosfera accogliente in ogni stagione.",
-    "amenitiesTitle": "Ogni appartamento è completamente arredato e dotato di tutti i comfort moderni",
+    "intro": "Scoprite il piacere di una vacanza in montagna senza rinunciare a nessun comfort. I nostri appartamenti indipendenti, di nuova costruzione e appena ultimati, hanno ingresso autonomo e nessuna area condivisa con altri ospiti: niente reception, solo la vostra casa vacanza.",
+    "amenitiesTitle": "Ogni appartamento è finemente ristrutturato e arredato, con lavastoviglie, lavatrice, frigo, posto auto e box garage, terrazzo",
     "description1": "Gli ambienti sono nuovi, curati nei dettagli e progettati per farvi sentire subito a casa, che siate in vacanza per un weekend o per un soggiorno più lungo.",
     "description2": "La posizione è ideale: comoda alle piste da sci, perfetta per gli amanti degli sport invernali, e allo stesso tempo vicina a tutti i principali servizi come negozi, ristoranti e trasporti. In estate, la montagna offre natura, relax e infinite possibilità per escursioni e attività all'aria aperta.",
     "description3": "Qui troverete il perfetto equilibrio tra comfort moderno e fascino alpino. La vostra vacanza inizia da qui."
@@ -59,7 +59,11 @@
     "q5": "C'è la connessione Wi-Fi?",
     "a5": "Sì, Wi-Fi gratuito ad alta velocità in tutti gli appartamenti.",
     "q6": "Posso portare animali domestici?",
-    "a6": "Gli animali domestici sono ammessi previo accordo. Contattaci per maggiori informazioni."
+    "a6": "Gli animali domestici sono ammessi previo accordo. Contattaci per maggiori informazioni.",
+    "q7": "Gli appartamenti sono indipendenti o è una struttura alberghiera?",
+    "a7": "Sono 4 appartamenti completamente indipendenti, con ingresso autonomo e box auto privato: non c'è reception né aree comuni condivise con altri ospiti. Il check-in è self-service tramite keybox.",
+    "q8": "Quanto costa una notte?",
+    "a8": "I prezzi partono da 60 euro a notte, variabili in base a stagione, numero di ospiti e appartamento scelto. Contattaci per un preventivo personalizzato."
   },
   "guide": {
     "title": "Guida alla Valtellina",

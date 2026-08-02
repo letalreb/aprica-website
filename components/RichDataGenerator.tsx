@@ -64,7 +64,7 @@ export function generateLodgingBusinessSchema(): LodgingBusiness {
     '@type': 'LodgingBusiness',
     name: 'Case Vacanze Aprica Mountain Lodge',
     description:
-      'Case vacanze ad Aprica con 4 appartamenti per un totale di 20 posti letto. A 800 metri dagli impianti sciistici, con box auto privato e ogni comfort.',
+      'Appartamenti indipendenti ad Aprica: 4 alloggi autonomi con ingresso proprio, senza reception né aree comuni condivise, per un totale di 20 posti letto. A 800 metri dagli impianti sciistici, con box auto privato e ogni comfort. A partire da €60/notte.',
     url: BASE_URL,
     image: [
       `${BASE_URL}/images/structure-1.jpg`,

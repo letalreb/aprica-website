@@ -5,10 +5,30 @@ import ApartmentCard from '@/components/ApartmentCard';
 import { IconWasher, IconWifi, IconTv, IconShower, IconGarage } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'Appartamenti - Case Vacanze Aprica',
-  description: '4 appartamenti accoglienti ad Aprica: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 800m dagli impianti.',
+  title: 'Appartamenti Indipendenti ad Aprica',
+  description: '4 appartamenti indipendenti ad Aprica, senza reception: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Tutti con cucina completa, box auto e a 800m dagli impianti. Da €60/notte.',
   alternates: {
-    canonical: '/appartamenti',
+    canonical: '/appartamenti/',
+  },
+  openGraph: {
+    title: 'Appartamenti Indipendenti ad Aprica | Aprica Mountain Lodge',
+    description: '4 appartamenti indipendenti ad Aprica, senza reception: 2 bilocali da 4 posti e 2 trilocali da 6 posti. Da €60/notte.',
+    url: '/appartamenti/',
+    type: 'website',
+    images: [
+      {
+        url: '/images/panorama-passo-mortirolo-aprica-hd.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Appartamenti indipendenti Aprica Mountain Lodge',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Appartamenti Indipendenti ad Aprica',
+    description: '4 appartamenti indipendenti ad Aprica, da €60/notte.',
+    images: ['/images/panorama-passo-mortirolo-aprica-hd.jpg'],
   },
 };
 
@@ -48,7 +68,8 @@ export default function AppartamentiPage() {
 
           <div className="inline-block">
             <div className="bg-white/90 border-2 border-white px-6 py-3 rounded-2xl shadow-2xl backdrop-blur-md">
-              <p className="text-2xl font-bold text-mountain-pine">Richiedi info</p>
+              <p className="text-xs text-gray-600 mb-1">A partire da</p>
+              <p className="text-2xl font-bold text-mountain-pine">€60<span className="text-lg font-normal text-gray-700">/notte</span></p>
             </div>
           </div>
         </div>
@@ -84,7 +105,8 @@ export default function AppartamentiPage() {
               Servizi Comuni a Tutti gli Appartamenti
             </h2>
             <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto text-lg">
-              Appartamenti di nuova costruzione, completamente arredati e dotati di tutti i comfort moderni
+              Tutti gli appartamenti sono finemente ristrutturati e arredati, corredati da lavastoviglie,
+              lavatrice, frigorifero, posto auto e box garage, terrazzo
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -128,6 +150,20 @@ export default function AppartamentiPage() {
               <h3 className="font-bold text-xl mb-2 text-mountain-pine">Cucina Completa</h3>
               <p className="text-gray-700">
                 Piano cottura a induzione e tutti gli utensili necessari
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow">
+              <div className="text-5xl mb-4">🧊</div>
+              <h3 className="font-bold text-xl mb-2 text-mountain-pine">Frigorifero</h3>
+              <p className="text-gray-700">
+                Frigorifero capiente in ogni appartamento
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg text-center hover:shadow-2xl transition-shadow">
+              <div className="text-5xl mb-4">🌄</div>
+              <h3 className="font-bold text-xl mb-2 text-mountain-pine">Terrazzo</h3>
+              <p className="text-gray-700">
+                Terrazzo o balcone con vista panoramica sulle montagne
               </p>
             </div>
           </div>
